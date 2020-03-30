@@ -1,22 +1,21 @@
-![README](readme.png)
 ```
-                                                                                                                     JVM2 - JMSReceiver.
-                                               JVM1 - kie-server
-                                                                                                                     +-----------+ Stores audit log into     +------------+
+                                                                                                                    
+                                             JVM1 - kie-server                                                      JVM2 - JMSReceiver                         database2
+database1                                                                                                            +-----------+  Stores audit log into    +------------+
 +-------+                                     +----------+                                                           |           |                           |            |
 |       |        Stores audit log into        |          |                                                           |           | +---------------------->  |            |
 |       |                                     |          |                                                           |           |                           |            |
 |       |       <-------------------------+   |          |                                                           |           |                           |            |
 +-------+                                     |          |                                                           |           |                           +------------+
                                               |          |                                                           +-----------+
-  Database 1                                  +----------+                                                                                                        Database 2
-                                                            +                                                              + reads audit logs from
+                                              +----------+                                                                                                      
+                                                            +                                                              + 
                                                             |                                                              |
                                                             |                                                              |
                                                             |                                                              |
-                                                            | duplicates audit logs to                                     |
+                                                            | duplicates audit logs to            reads audit logs from    |
                                                             |                                                              |
-                                                            +------------------+                +--------------------------+
+                                                            +------------------>                <--------------------------+
                                                                                  +-----------+
                                                                                  |           |
                                                                                  |           |
@@ -24,6 +23,5 @@
                                                                                  |           |
                                                                                  |           |
                                                                                  +-----------+
-
-                                                                                JMS Broker
+                                                                                   JMS Broker
 ```
