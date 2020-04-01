@@ -29,7 +29,7 @@ non history request        |  |                                   |             
                            |  |                                   |                            +-----------+
                            +  +                                   |                              JMS Broker
               +----------+     <----------------------------------+
-              |          |         non history request
+              |          |         non history response
               |          |
               |          |
               |          |
