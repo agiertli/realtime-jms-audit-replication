@@ -8,6 +8,5 @@
   <modules>
   	<module>spring-boot-kie-server</module>
   	<module>kjar</module>
-  	<module>spring-boot-jms-receiver</module>
   </modules>
 </project>
