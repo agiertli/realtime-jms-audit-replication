@@ -1,4 +1,4 @@
-package com.company.service;
+package com.company.service.jms;
 
 import static org.kie.soup.commons.xstream.XStreamUtils.createTrustingXStream;
 
@@ -26,18 +26,24 @@ import com.thoughtworks.xstream.XStream;
 
 @Component
 @Transactional
-public class JMSAuditReceiver {
+/**
+ * 
+ * Listens to JMS messages as sent by JMSProcessEventListener
+ * Almost exact copy of https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogReceiver.java
+ * 
+ * @author agiertli
+ *
+ */
+public class JMSMessageListener {
 
-	Logger logger = LoggerFactory.getLogger(JMSAuditReceiver.class);
+	Logger logger = LoggerFactory.getLogger(JMSMessageListener.class);
 	private XStream xstream;
 
 	@Autowired
 	@Qualifier("auditEntityManager")
 	EntityManagerFactory emf;
 
-	public JMSAuditReceiver() {
-		
-		
+	public JMSMessageListener() {
 
 		initXStream();
 

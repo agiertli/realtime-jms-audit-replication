@@ -30,18 +30,32 @@
 			<groupId>org.kie</groupId>
 			<artifactId>kie-server-spring-boot-starter</artifactId>
 			<version>${version.org.kie}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jboss.spec.javax.servlet</groupId>
+					<artifactId>jboss-servlet-api_3.1_spec</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
-<!-- 		<dependency>
+		<dependency>
 			<groupId>org.amqphub.spring</groupId>
 			<artifactId>amqp-10-jms-spring-boot-starter</artifactId>
 			<version>2.2.2.redhat-00002</version>
-		</dependency>  -->
-		
-	<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency> 
+		</dependency>
+		<dependency>
+			<groupId>javax.json</groupId>
+			<artifactId>javax.json-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>artemis-amqp-protocol</artifactId>
+		</dependency>
+
+
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-activemq</artifactId> 
+			</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,11 +67,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
-		  <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
 	</dependencies>
 

@@ -1,4 +1,4 @@
-package com.company.service;
+package com.company.service.jms;
 
 import com.thoughtworks.xstream.XStream;
 
@@ -17,6 +17,7 @@ import org.kie.api.event.process.ProcessVariableChangedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 import static org.kie.soup.commons.xstream.XStreamUtils.createTrustingXStream;
@@ -26,12 +27,13 @@ import java.util.List;
 import javax.jms.TextMessage;
 
 /**
- * AuditListener
+ * Listens to jBPM Process Events and forwards them to JMS Queue
+ * Almost exact copy of https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogProducer.java
  */
 @Component
-public class AuditListener implements ProcessEventListener {
+public class JMSProcessEventListener implements ProcessEventListener {
 
-    Logger logger = LoggerFactory.getLogger(AuditListener.class);
+    Logger logger = LoggerFactory.getLogger(JMSProcessEventListener.class);
 
     public static final int BEFORE_START_EVENT_TYPE = 0;
     public static final int AFTER_START_EVENT_TYPE = 1;
@@ -50,7 +52,7 @@ public class AuditListener implements ProcessEventListener {
     @Autowired
     private JmsTemplate jmsTemplate;
 
-    public AuditListener() {
+    public JMSProcessEventListener() {
         initXStream();
 
     }

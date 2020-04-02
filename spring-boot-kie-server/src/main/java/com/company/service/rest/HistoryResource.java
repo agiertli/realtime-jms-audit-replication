@@ -1,4 +1,4 @@
-package com.company.service;
+package com.company.service.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,9 +15,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 @Path("/history")
-public class HistoryProxy {
+public class HistoryResource {
 
-	Logger logger = LoggerFactory.getLogger(HistoryProxy.class);
+	Logger logger = LoggerFactory.getLogger(HistoryResource.class);
 
 	@Autowired
 	private RestTemplate restTemplate;
