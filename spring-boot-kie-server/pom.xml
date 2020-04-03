@@ -26,6 +26,13 @@
 	</properties>
 	<dependencies>
 
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-server-spring-boot-starter</artifactId>

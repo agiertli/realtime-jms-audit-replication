@@ -1,4 +1,4 @@
-package com.company.service.jpa;
+package com.company.history.jpa;
 
 import org.apache.commons.dbcp2.PoolableConnection;
 import org.apache.commons.dbcp2.PoolableConnectionFactory;

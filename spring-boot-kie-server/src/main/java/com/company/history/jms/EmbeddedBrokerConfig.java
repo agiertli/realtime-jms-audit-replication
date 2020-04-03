@@ -1,4 +1,4 @@
-package com.company.service.jms;
+package com.company.history.jms;
 
 import org.apache.activemq.artemis.core.config.impl.SecurityConfiguration;
 import org.apache.activemq.artemis.core.server.embedded.EmbeddedActiveMQ;

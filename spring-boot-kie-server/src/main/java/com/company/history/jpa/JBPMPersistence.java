@@ -1,4 +1,4 @@
-package com.company.service.jpa;
+package com.company.history.jpa;
 
 import org.jbpm.kie.services.impl.FormManagerService;
 import org.jbpm.kie.services.impl.bpmn2.BPMN2DataServiceImpl;

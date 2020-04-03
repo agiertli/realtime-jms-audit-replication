@@ -1,4 +1,4 @@
-package com.company.service.jms;
+package com.company.history.jms;
 
 import static org.kie.soup.commons.xstream.XStreamUtils.createTrustingXStream;
 
