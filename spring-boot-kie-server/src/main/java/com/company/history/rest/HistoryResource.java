@@ -4,6 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -26,9 +27,9 @@ public class HistoryResource {
 	@GET
 	@Path("/processes/instances/{pid}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getHistoryPlog(@PathParam("pid") Long pid) {
+	public Response getHistoryPlog(@PathParam("pid") Long pid, @QueryParam("withVars") boolean withVars) {
 
-		ProcessInstance response = historyRuntimeDataServiceBase.getProcessInstanceById(pid);
+		ProcessInstance response = historyRuntimeDataServiceBase.getProcessInstanceById(pid, withVars);
 		logger.info("response response {}", response);
 
 		return Response.ok().entity(response).build();
