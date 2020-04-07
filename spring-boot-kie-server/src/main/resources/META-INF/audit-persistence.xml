@@ -7,12 +7,24 @@
 
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-		<!-- <class>org.jbpm.persistence.processinstance.ProcessInstanceInfo</class> 
-			<class>org.jbpm.services.task.audit.impl.model.BAMTaskSummaryImpl</class> -->
 		<class>org.jbpm.process.audit.ProcessInstanceLog</class>
 		<class>org.jbpm.process.audit.NodeInstanceLog</class>
 		<class>org.jbpm.process.audit.VariableInstanceLog</class>
 		<class>org.jbpm.services.task.audit.impl.model.AuditTaskImpl</class>
+		<class>org.jbpm.services.task.impl.model.TaskImpl</class>
+		<class>org.jbpm.services.task.audit.impl.model.BAMTaskSummaryImpl</class>
+		<class>org.jbpm.services.task.audit.impl.model.TaskVariableImpl</class>
+		<class>org.jbpm.services.task.impl.model.AttachmentImpl</class>
+		<class>org.jbpm.services.task.audit.impl.model.TaskEventImpl</class>
+		<class>org.jbpm.services.task.impl.model.PeopleAssignmentsImpl</class>
+		<class>org.jbpm.services.task.impl.model.I18NTextImpl</class>
+		<class>org.jbpm.services.task.impl.model.DeadlineImpl</class>
+		<class>org.jbpm.services.task.impl.model.EscalationImpl</class>
+		<class>org.jbpm.services.task.impl.model.ReassignmentImpl</class>
+		<class>org.jbpm.services.task.impl.model.NotificationImpl</class>
+		<class>org.jbpm.services.task.impl.model.BooleanExpressionImpl</class>
+		<class>org.jbpm.services.task.impl.model.UserImpl</class>
+		<class>org.jbpm.services.task.impl.model.CommentImpl</class>
 		<class>org.jbpm.kie.services.impl.store.DeploymentStoreEntry</class>
 		<class>org.jbpm.kie.services.impl.query.persistence.QueryDefinitionEntity</class>
 		<class>org.jbpm.runtime.manager.impl.jpa.ExecutionErrorInfo</class>

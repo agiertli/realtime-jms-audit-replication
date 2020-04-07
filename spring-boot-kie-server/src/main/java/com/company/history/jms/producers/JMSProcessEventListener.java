@@ -1,4 +1,4 @@
-package com.company.history.jms;
+package com.company.history.jms.producers;
 
 import static org.kie.soup.commons.xstream.XStreamUtils.createTrustingXStream;
 

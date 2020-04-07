@@ -1,4 +1,4 @@
-package com.company.history.service;
+package com.company.history.jpa;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -100,6 +100,7 @@ public class CustomQueryManager {
 	@PostConstruct
 	public void init() {
 		addNamedQueries("META-INF/history-Servicesorm.xml");
+		addNamedQueries("META-INF/history-TaskAuditorm.xml");
 		EntityManager tmpEM = emf.createEntityManager();
 		queries.forEach((k, v) -> {
 			logger.info("Registering {} query on history emf", k);

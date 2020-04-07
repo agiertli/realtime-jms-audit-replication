@@ -3,13 +3,9 @@ package com.company.history.service;
 import javax.persistence.EntityManagerFactory;
 
 import org.drools.persistence.api.TransactionManager;
-import org.jbpm.kie.services.impl.RuntimeDataServiceImpl;
-import org.jbpm.services.api.RuntimeDataService;
 import org.jbpm.shared.services.impl.TransactionalCommandService;
 import org.kie.server.services.api.KieServer;
 import org.kie.server.services.impl.KieServerImpl;
-import org.kie.server.services.impl.KieServerRegistryImpl;
-import org.kie.server.services.jbpm.RuntimeDataServiceBase;
 import org.kie.spring.jbpm.services.SpringTransactionalCommandService;
 import org.kie.spring.persistence.KieSpringTransactionManager;
 import org.slf4j.Logger;
@@ -37,22 +33,26 @@ public class HistoServiceRepository {
 	private KieServer server;
 
 	@Bean(name = "historyRuntimeDataService")
-	public RuntimeDataService getHistoryRuntimeDataService() {
+	public CustomRuntimeDataServiceImpl getHistoryRuntimeDataService() {
 
-		logger.info("Instantiating historyRuntimeDataService");
+		logger.info("Instantiating CustomRuntimeDataServiceImpl");
 		TransactionManager kieTransactionManager = new KieSpringTransactionManager(
 				(AbstractPlatformTransactionManager) transactionManager);
 		TransactionalCommandService tcs = new SpringTransactionalCommandService(emf, kieTransactionManager,
 				(AbstractPlatformTransactionManager) transactionManager);
-		RuntimeDataService runtimeDataService = new RuntimeDataServiceImpl();
-		((RuntimeDataServiceImpl) runtimeDataService).setCommandService(tcs);
+		CustomRuntimeDataServiceImpl runtimeDataService = new CustomRuntimeDataServiceImpl();
+		((CustomRuntimeDataServiceImpl) runtimeDataService).setCommandService(tcs);
 		return runtimeDataService;
 	}
 
 	@Bean(name = "historyRuntimeDataServiceBase")
-	public RuntimeDataServiceBase getHistoryRuntimeDataServiceBase(RuntimeDataService historyRuntimeDataService) {
+	public CustomRuntimeDataServiceBase getHistoryRuntimeDataServiceBase(
+			CustomRuntimeDataServiceImpl historyRuntimeDataService) {
+		logger.info("Instantiating CustomRuntimeDataServiceBase");
 
-		return new RuntimeDataServiceBase(historyRuntimeDataService, ((KieServerImpl) server).getServerRegistry());
+
+		return new CustomRuntimeDataServiceBase(historyRuntimeDataService,
+				((KieServerImpl) server).getServerRegistry());
 
 	}
 

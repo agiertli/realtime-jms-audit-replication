@@ -1,4 +1,4 @@
-package com.company.history.jms;
+package com.company.history.jms.receivers;
 
 import static org.kie.soup.commons.xstream.XStreamUtils.createTrustingXStream;
 
@@ -28,22 +28,23 @@ import com.thoughtworks.xstream.XStream;
 @Transactional
 /**
  * 
- * Listens to JMS messages as sent by JMSProcessEventListener
- * Almost exact copy of https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogReceiver.java
+ * Listens to JMS messages as sent by JMSProcessEventListener Almost exact copy
+ * of
+ * https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogReceiver.java
  * 
  * @author agiertli
  *
  */
-public class JMSMessageListener {
+public class ProcessAuditReceiver {
 
-	Logger logger = LoggerFactory.getLogger(JMSMessageListener.class);
+	Logger logger = LoggerFactory.getLogger(ProcessAuditReceiver.class);
 	private XStream xstream;
 
 	@Autowired
 	@Qualifier("auditEntityManager")
 	EntityManagerFactory emf;
 
-	public JMSMessageListener() {
+	public ProcessAuditReceiver() {
 
 		initXStream();
 
@@ -57,14 +58,13 @@ public class JMSMessageListener {
 		}
 	}
 
-	@JmsListener(destination = "audit-queue")
-	public void receiveMessage(Object message) {
+	public void onMessage(Object message) {
 		EntityManager em = this.emf.createEntityManager();
 
 		if (message instanceof TextMessage) {
 
 			TextMessage textMessage = (TextMessage) message;
-			logger.info("Message received : {}", textMessage);
+			logger.info("[Process Audit Log] Message received : {}", textMessage);
 
 			try {
 				String messageContent = textMessage.getText();

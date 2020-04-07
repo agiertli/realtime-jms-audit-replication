@@ -1,4 +1,4 @@
-package com.company.history.jms;
+package com.company.history.jms.producers;
 
 import java.util.Map;
 
@@ -55,25 +55,10 @@ public class CustomAuditEventBuilder extends DefaultAuditEventBuilderImpl {
 	}
 
 	public AuditEvent buildEvent(ProcessNodeTriggeredEvent pnte, Object log, String deploymentUnitId) {
-		NodeInstanceImpl nodeInstance = (NodeInstanceImpl) pnte.getNodeInstance();
+		NodeInstanceLog nodeInstanceLog = (NodeInstanceLog) super.buildEvent(pnte, log);
+		nodeInstanceLog.setExternalId(deploymentUnitId);
+		return nodeInstanceLog;
 
-		NodeInstanceLog logEvent = null;
-		if (log != null) {
-			logEvent = (NodeInstanceLog) log;
-
-			if (nodeInstance instanceof WorkItemNodeInstance
-					&& ((WorkItemNodeInstance) nodeInstance).getWorkItem() != null) {
-				logEvent.setWorkItemId(((WorkItemNodeInstance) nodeInstance).getWorkItem().getId());
-			}
-			if (nodeInstance instanceof SubProcessNodeInstance) {
-				logEvent.setReferenceId(((SubProcessNodeInstance) nodeInstance).getProcessInstanceId());
-			}
-			logEvent.setExternalId(deploymentUnitId);
-
-			return logEvent;
-		}
-
-		return null;
 	}
 
 	public AuditEvent buildEvent(ProcessNodeLeftEvent pnle, Object log, String deploymentUnitId) {
