@@ -44,6 +44,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.company.history.service.CustomRuntimeDataServiceBase;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -52,6 +53,7 @@ import io.swagger.annotations.Example;
 import io.swagger.annotations.ExampleProperty;
 
 @Path("/history")
+@Api(value = "Custom History API", produces = MediaType.APPLICATION_JSON)
 public class HistoryResource {
 
 	Logger logger = LoggerFactory.getLogger(HistoryResource.class);
@@ -75,6 +77,15 @@ public class HistoryResource {
 		logger.info("response response {}", response);
 
 		return createCorrectVariant(response, headers, Response.Status.OK, conversationIdHeader);
+	}
+
+	@GET
+	@Path("/example")
+	public Response example() {
+
+		String response = " {\"exampleResponse\" : \"exampleValue\" }";
+		return Response.ok(response).build();
+
 	}
 
 	@GET
