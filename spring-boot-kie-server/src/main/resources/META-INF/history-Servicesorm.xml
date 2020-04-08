@@ -163,6 +163,33 @@
     <!-- hint name="org.hibernate.timeout" value="200"/ -->
   </named-query>
   
+    <named-query name="getProcessInstanceByIdByDate">
+    <query>
+     SELECT
+      new org.jbpm.kie.services.impl.model.ProcessInstanceDesc(
+      log.processInstanceId,
+      log.processId,
+      log.processName,
+      log.processVersion,
+      log.status,
+      log.externalId,
+      log.start,
+      log.identity,
+      log.processInstanceDescription,
+      log.correlationKey,
+      log.parentProcessInstanceId,
+      log.slaDueDate,
+      log.slaCompliance
+        )
+      FROM
+        ProcessInstanceLog log
+      WHERE
+        log.status in (:states)
+        AND start_date BETWEEN :startFrom AND :startTo
+    </query>
+    <!-- hint name="org.hibernate.timeout" value="200"/ -->
+  </named-query>
+  
   <named-query name="getProcessInstanceByCorrelationKey">
     <query>
      select

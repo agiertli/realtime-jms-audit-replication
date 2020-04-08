@@ -50,7 +50,6 @@ public class HistoServiceRepository {
 			CustomRuntimeDataServiceImpl historyRuntimeDataService) {
 		logger.info("Instantiating CustomRuntimeDataServiceBase");
 
-
 		return new CustomRuntimeDataServiceBase(historyRuntimeDataService,
 				((KieServerImpl) server).getServerRegistry());
 

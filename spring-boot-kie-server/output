@@ -1,0 +1,1457 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.redhat.services:spring-boot-kieserver:jar:0.0.1-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.redhat.services:spring-boot-kieserver:0.0.1-SNAPSHOT (/Users/agiertli/Documents/work/DB/realtime-jms-audit-replication/spring-boot-kie-server/pom.xml) points at org.redhat.services:realtime-audit-replication-parent instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 12, column 10
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------< org.redhat.services:spring-boot-kieserver >--------------
+[INFO] Building spring-boot-kie-server 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) > test-compile @ spring-boot-kieserver >>>
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:3.0.17.redhat-00001 is missing, no dependency information available
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ spring-boot-kieserver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ spring-boot-kieserver ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ spring-boot-kieserver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/agiertli/Documents/work/DB/realtime-jms-audit-replication/spring-boot-kie-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ spring-boot-kieserver ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) < test-compile @ spring-boot-kieserver <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) @ spring-boot-kieserver ---
+[INFO] Attaching agents: []
+   _ ______ ______ ___  ___  ______              _                            ___                 _  _              _    _
+  (_)| ___ \| ___ \|  \/  |  | ___ \            (_)                          / _ \               | |(_)            | |  (_)
+   _ | |_/ /| |_/ /| .  . |  | |_/ / _   _  ___  _  _ __    ___  ___  ___   / /_\ \ _ __   _ __  | | _   ___  __ _ | |_  _   ___   _ __
+  | || ___ \|  __/ | |\/| |  | ___ \| | | |/ __|| || '_ \  / _ \/ __|/ __|  |  _  || '_ \ | '_ \ | || | / __|/ _` || __|| | / _ \ | '_ \
+  | || |_/ /| |    | |  | |  | |_/ /| |_| |\__ \| || | | ||  __/\__ \\__ \  | | | || |_) || |_) || || || (__| (_| || |_ | || (_) || | | |
+  | |\____/ \_|    \_|  |_/  \____/  \__,_||___/|_||_| |_| \___||___/|___/  \_| |_/| .__/ | .__/ |_||_| \___|\__,_| \__||_| \___/ |_| |_|
+ _/ |                                                                              | |    | |
+|__/                                                                               |_|    |_|
+                                                    business-application-service :: v.1.0-SNAPSHOT
+
+
+2020-04-08 13:40:29.058  INFO 18835 --- [           main] com.company.Application                  : Starting Application on Antons-MacBook-Pro with PID 18835 (/Users/agiertli/Documents/work/DB/realtime-jms-audit-replication/spring-boot-kie-server/target/classes started by agiertli in /Users/agiertli/Documents/work/DB/realtime-jms-audit-replication/spring-boot-kie-server)
+2020-04-08 13:40:29.060  INFO 18835 --- [           main] com.company.Application                  : The following profiles are active: local
+2020-04-08 13:40:29.618  INFO 18835 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-08 13:40:29.632  INFO 18835 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-04-08 13:40:30.308  INFO 18835 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 13:40:30.531  INFO 18835 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-04-08 13:40:30.540  INFO 18835 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 13:40:30.540  INFO 18835 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-04-08 13:40:30.671  INFO 18835 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 13:40:30.671  INFO 18835 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1576 ms
+2020-04-08 13:40:30.872  WARN 18835 --- [           main] com.arjuna.ats.common                    : ARJUNA048002: Could not find configuration file, URL was: null
+2020-04-08 13:40:30.886  INFO 18835 --- [           main] com.arjuna.ats.jbossatx                  : ARJUNA032010: JBossTS Recovery Service (tag: unknown) - JBoss Inc.
+2020-04-08 13:40:30.915  INFO 18835 --- [           main] com.arjuna.ats.jbossatx                  : ARJUNA032013: Starting transaction recovery manager
+2020-04-08 13:40:31.070  INFO 18835 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:kieserver'
+2020-04-08 13:40:31.125  INFO 18835 --- [           main] o.d.p.api.TransactionManagerFactory      : Using org.kie.spring.persistence.KieSpringTransactionManagerFactory@25f15f50
+2020-04-08 13:40:31.223  INFO 18835 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: org.jbpm.audit.persistence.jpa]
+2020-04-08 13:40:31.300  INFO 18835 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-04-08 13:40:31.460  INFO 18835 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-08 13:40:31.613  INFO 18835 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-08 13:40:32.059  INFO 18835 --- [           main] org.hibernate.orm.beans                  : HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-08 13:40:32.759  INFO 18835 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+Hibernate: create table Attachment (id bigint generated by default as identity, accessType integer, attachedAt timestamp, attachmentContentId bigint not null, contentType varchar(255), name varchar(255), attachment_size integer, attachedBy_id varchar(255), TaskData_Attachments_Id bigint, primary key (id))
+Hibernate: create table AuditTaskImpl (id bigint generated by default as identity, activationTime timestamp, actualOwner varchar(255), createdBy varchar(255), createdOn timestamp, deploymentId varchar(255), description varchar(255), dueDate timestamp, lastModificationDate timestamp, name varchar(255), parentId bigint not null, priority integer not null, processId varchar(255), processInstanceId bigint not null, processSessionId bigint not null, status varchar(255), taskId bigint, workItemId bigint, primary key (id))
+Hibernate: create table BAMTaskSummary (pk bigint generated by default as identity, createdDate timestamp, duration bigint, endDate timestamp, processInstanceId bigint not null, startDate timestamp, status varchar(255), taskId bigint not null, taskName varchar(255), userId varchar(255), OPTLOCK integer, primary key (pk))
+Hibernate: create table BooleanExpression (id bigint generated by default as identity, expression clob, type varchar(255), Escalation_Constraints_Id bigint, primary key (id))
+Hibernate: create table CaseFileDataLog (id bigint generated by default as identity, caseDefId varchar(255), caseId varchar(255), itemName varchar(255), itemType varchar(255), itemValue varchar(255), lastModified timestamp, lastModifiedBy varchar(255), primary key (id))
+Hibernate: create table CaseIdInfo (id bigint generated by default as identity, caseIdPrefix varchar(255), currentValue bigint, primary key (id))
+Hibernate: create table CaseRoleAssignmentLog (id bigint generated by default as identity, caseId varchar(255), entityId varchar(255), processInstanceId bigint not null, roleName varchar(255), type integer not null, primary key (id))
+Hibernate: create table ContextMappingInfo (mappingId bigint generated by default as identity, CONTEXT_ID varchar(255) not null, KSESSION_ID bigint not null, OWNER_ID varchar(255), OPTLOCK integer, primary key (mappingId))
+Hibernate: create table Deadline (id bigint generated by default as identity, deadline_date timestamp, escalated smallint, Deadlines_StartDeadLine_Id bigint, Deadlines_EndDeadLine_Id bigint, primary key (id))
+Hibernate: create table Delegation_delegates (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table DeploymentStore (id bigint generated by default as identity, attributes varchar(255), DEPLOYMENT_ID varchar(255), deploymentUnit clob, state integer, updateDate timestamp, primary key (id))
+Hibernate: create table Escalation (id bigint generated by default as identity, name varchar(255), Deadline_Escalation_Id bigint, primary key (id))
+Hibernate: create table EventTypes (InstanceId bigint not null, element varchar(255))
+Hibernate: create table ExecutionErrorInfo (id bigint generated by default as identity, ERROR_ACK smallint, ERROR_ACK_AT timestamp, ERROR_ACK_BY varchar(255), ACTIVITY_ID bigint, ACTIVITY_NAME varchar(255), DEPLOYMENT_ID varchar(255), ERROR_INFO clob, ERROR_DATE timestamp, ERROR_ID varchar(255), ERROR_MSG varchar(255), INIT_ACTIVITY_ID bigint, JOB_ID bigint, PROCESS_ID varchar(255), PROCESS_INST_ID bigint, ERROR_TYPE varchar(255), primary key (id))
+Hibernate: create table I18NText (id bigint generated by default as identity, language varchar(255), shortText varchar(255), text clob, Notification_Subjects_Id bigint, Notification_Names_Id bigint, Notification_Documentation_Id bigint, Notification_Descriptions_Id bigint, Reassignment_Documentation_Id bigint, Deadline_Documentation_Id bigint, Task_Subjects_Id bigint, Task_Names_Id bigint, Task_Descriptions_Id bigint, primary key (id))
+Hibernate: create table NodeInstanceLog (id bigint generated by default as identity, connection varchar(255), log_date timestamp, externalId varchar(255), nodeContainerId varchar(255), nodeId varchar(255), nodeInstanceId varchar(255), nodeName varchar(255), nodeType varchar(255), processId varchar(255), processInstanceId bigint not null, referenceId bigint, slaCompliance integer, sla_due_date timestamp, type integer not null, workItemId bigint, primary key (id))
+Hibernate: create table Notification (id bigint generated by default as identity, priority integer not null, Escalation_Notifications_Id bigint, primary key (id))
+Hibernate: create table Notification_BAs (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table Notification_Recipients (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table OrganizationalEntity (DTYPE varchar(31) not null, id varchar(255) not null, primary key (id))
+Hibernate: create table PeopleAssignments_BAs (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table PeopleAssignments_ExclOwners (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table PeopleAssignments_PotOwners (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table PeopleAssignments_Recipients (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table PeopleAssignments_Stakeholders (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table ProcessInstanceInfo (InstanceId bigint generated by default as identity, lastModificationDate timestamp, lastReadDate timestamp, processId varchar(255), processInstanceByteArray blob, startDate timestamp, state integer not null, OPTLOCK integer, primary key (InstanceId))
+Hibernate: create table ProcessInstanceLog (id bigint generated by default as identity, correlationKey varchar(255), duration bigint, end_date timestamp, externalId varchar(255), user_identity varchar(255), outcome varchar(255), parentProcessInstanceId bigint, processId varchar(255), processInstanceDescription varchar(255), processInstanceId bigint not null, processName varchar(255), processType integer, processVersion varchar(255), slaCompliance integer, sla_due_date timestamp, start_date timestamp, status integer, primary key (id))
+Hibernate: create table QueryDefinitionStore (id bigint generated by default as identity, qExpression clob, qName varchar(255), qSource varchar(255), qTarget varchar(255), primary key (id))
+Hibernate: create table Reassignment (id bigint generated by default as identity, Escalation_Reassignments_Id bigint, primary key (id))
+Hibernate: create table Reassignment_potentialOwners (task_id bigint not null, entity_id varchar(255) not null)
+Hibernate: create table Task (id bigint generated by default as identity, archived smallint, allowedToDelegate varchar(255), description varchar(255), formName varchar(255), name varchar(255), priority integer not null, subTaskStrategy varchar(255), subject varchar(255), activationTime timestamp, createdOn timestamp, deploymentId varchar(255), documentAccessType integer, documentContentId bigint not null, documentType varchar(255), expirationTime timestamp, faultAccessType integer, faultContentId bigint not null, faultName varchar(255), faultType varchar(255), outputAccessType integer, outputContentId bigint not null, outputType varchar(255), parentId bigint not null, previousStatus integer, processId varchar(255), processInstanceId bigint not null, processSessionId bigint not null, skipable boolean not null, status varchar(255), workItemId bigint not null, taskType varchar(255), OPTLOCK integer, taskInitiator_id varchar(255), actualOwner_id varchar(255), createdBy_id varchar(255), primary key (id))
+Hibernate: create table task_comment (id bigint generated by default as identity, addedAt timestamp, text clob, addedBy_id varchar(255), TaskData_Comments_Id bigint, primary key (id))
+Hibernate: create table TaskEvent (id bigint generated by default as identity, logTime timestamp, message varchar(255), processInstanceId bigint, taskId bigint, type varchar(255), userId varchar(255), OPTLOCK integer, workItemId bigint, primary key (id))
+Hibernate: create table TaskVariableImpl (id bigint generated by default as identity, modificationDate timestamp, name varchar(255), processId varchar(255), processInstanceId bigint, taskId bigint, type integer, value varchar(4000), primary key (id))
+Hibernate: create table VariableInstanceLog (id bigint generated by default as identity, log_date timestamp, externalId varchar(255), oldValue varchar(255), processId varchar(255), processInstanceId bigint not null, value varchar(255), variableId varchar(255), variableInstanceId varchar(255), primary key (id))
+Hibernate: create index IDX_Attachment_Id on Attachment (attachedBy_id)
+Hibernate: create index IDX_Attachment_DataId on Attachment (TaskData_Attachments_Id)
+Hibernate: create index IDX_AuditTaskImpl_taskId on AuditTaskImpl (taskId)
+Hibernate: create index IDX_AuditTaskImpl_pInstId on AuditTaskImpl (processInstanceId)
+Hibernate: create index IDX_AuditTaskImpl_workItemId on AuditTaskImpl (workItemId)
+Hibernate: create index IDX_AuditTaskImpl_name on AuditTaskImpl (name)
+Hibernate: create index IDX_AuditTaskImpl_processId on AuditTaskImpl (processId)
+Hibernate: create index IDX_AuditTaskImpl_status on AuditTaskImpl (status)
+Hibernate: create index IDX_BAMTaskSumm_createdDate on BAMTaskSummary (createdDate)
+Hibernate: create index IDX_BAMTaskSumm_duration on BAMTaskSummary (duration)
+Hibernate: create index IDX_BAMTaskSumm_endDate on BAMTaskSummary (endDate)
+Hibernate: create index IDX_BAMTaskSumm_pInstId on BAMTaskSummary (processInstanceId)
+Hibernate: create index IDX_BAMTaskSumm_startDate on BAMTaskSummary (startDate)
+Hibernate: create index IDX_BAMTaskSumm_status on BAMTaskSummary (status)
+Hibernate: create index IDX_BAMTaskSumm_taskId on BAMTaskSummary (taskId)
+Hibernate: create index IDX_BAMTaskSumm_taskName on BAMTaskSummary (taskName)
+Hibernate: create index IDX_BAMTaskSumm_userId on BAMTaskSummary (userId)
+Hibernate: create index IDX_BoolExpr_Id on BooleanExpression (Escalation_Constraints_Id)
+Hibernate: alter table CaseIdInfo drop constraint if exists UKftvt225gyxpjnl3d06alqkqyj
+Hibernate: alter table CaseIdInfo add constraint UKftvt225gyxpjnl3d06alqkqyj unique (caseIdPrefix)
+Hibernate: create index IDX_CMI_Context on ContextMappingInfo (CONTEXT_ID)
+Hibernate: create index IDX_CMI_KSession on ContextMappingInfo (KSESSION_ID)
+Hibernate: create index IDX_CMI_Owner on ContextMappingInfo (OWNER_ID)
+Hibernate: create index IDX_Deadline_StartId on Deadline (Deadlines_StartDeadLine_Id)
+Hibernate: create index IDX_Deadline_EndId on Deadline (Deadlines_EndDeadLine_Id)
+Hibernate: create index IDX_Delegation_EntityId on Delegation_delegates (entity_id)
+Hibernate: create index IDX_Delegation_TaskId on Delegation_delegates (task_id)
+Hibernate: alter table DeploymentStore drop constraint if exists UK85rgskt09thd8mkkfl3tb0y81
+Hibernate: alter table DeploymentStore add constraint UK85rgskt09thd8mkkfl3tb0y81 unique (DEPLOYMENT_ID)
+Hibernate: create index IDX_Escalation_Id on Escalation (Deadline_Escalation_Id)
+Hibernate: create index IDX_EventTypes_Id on EventTypes (InstanceId)
+Hibernate: create index IDX_EventTypes_element on EventTypes (element)
+Hibernate: create index IDX_ErrorInfo_pInstId on ExecutionErrorInfo (PROCESS_INST_ID)
+Hibernate: create index IDX_ErrorInfo_errorAck on ExecutionErrorInfo (ERROR_ACK)
+Hibernate: create index IDX_I18NText_SubjId on I18NText (Task_Subjects_Id)
+Hibernate: create index IDX_I18NText_NameId on I18NText (Task_Names_Id)
+Hibernate: create index IDX_I18NText_DescrId on I18NText (Task_Descriptions_Id)
+Hibernate: create index IDX_I18NText_ReassignId on I18NText (Reassignment_Documentation_Id)
+Hibernate: create index IDX_I18NText_NotSubjId on I18NText (Notification_Subjects_Id)
+Hibernate: create index IDX_I18NText_NotNamId on I18NText (Notification_Names_Id)
+Hibernate: create index IDX_I18NText_NotDocId on I18NText (Notification_Documentation_Id)
+Hibernate: create index IDX_I18NText_NotDescrId on I18NText (Notification_Descriptions_Id)
+Hibernate: create index IDX_I18NText_DeadDocId on I18NText (Deadline_Documentation_Id)
+Hibernate: create index IDX_NInstLog_pInstId on NodeInstanceLog (processInstanceId)
+Hibernate: create index IDX_NInstLog_nodeType on NodeInstanceLog (nodeType)
+Hibernate: create index IDX_NInstLog_pId on NodeInstanceLog (processId)
+Hibernate: create index IDX_Not_EscId on Notification (Escalation_Notifications_Id)
+Hibernate: create index IDX_NotBAs_Entity on Notification_BAs (entity_id)
+Hibernate: create index IDX_NotBAs_Task on Notification_BAs (task_id)
+Hibernate: create index IDX_NotRec_Entity on Notification_Recipients (entity_id)
+Hibernate: create index IDX_NotRec_Task on Notification_Recipients (task_id)
+Hibernate: create index IDX_PAsBAs_Entity on PeopleAssignments_BAs (entity_id)
+Hibernate: create index IDX_PAsBAs_Task on PeopleAssignments_BAs (task_id)
+Hibernate: create index IDX_PAsExcl_Entity on PeopleAssignments_ExclOwners (entity_id)
+Hibernate: create index IDX_PAsExcl_Task on PeopleAssignments_ExclOwners (task_id)
+Hibernate: create index IDX_PAsPot_Entity on PeopleAssignments_PotOwners (entity_id)
+Hibernate: create index IDX_PAsPot_Task on PeopleAssignments_PotOwners (task_id)
+Hibernate: create index IDX_PAsRecip_Entity on PeopleAssignments_Recipients (entity_id)
+Hibernate: create index IDX_PAsRecip_Task on PeopleAssignments_Recipients (task_id)
+Hibernate: create index IDX_PAsStake_Entity on PeopleAssignments_Stakeholders (entity_id)
+Hibernate: create index IDX_PAsStake_Task on PeopleAssignments_Stakeholders (task_id)
+Hibernate: create index IDX_PInstLog_duration on ProcessInstanceLog (duration)
+Hibernate: create index IDX_PInstLog_end_date on ProcessInstanceLog (end_date)
+Hibernate: create index IDX_PInstLog_extId on ProcessInstanceLog (externalId)
+Hibernate: create index IDX_PInstLog_user_identity on ProcessInstanceLog (user_identity)
+Hibernate: create index IDX_PInstLog_outcome on ProcessInstanceLog (outcome)
+Hibernate: create index IDX_PInstLog_parentPInstId on ProcessInstanceLog (parentProcessInstanceId)
+Hibernate: create index IDX_PInstLog_pId on ProcessInstanceLog (processId)
+Hibernate: create index IDX_PInstLog_pInsteDescr on ProcessInstanceLog (processInstanceDescription)
+Hibernate: create index IDX_PInstLog_pInstId on ProcessInstanceLog (processInstanceId)
+Hibernate: create index IDX_PInstLog_pName on ProcessInstanceLog (processName)
+Hibernate: create index IDX_PInstLog_pVersion on ProcessInstanceLog (processVersion)
+Hibernate: create index IDX_PInstLog_start_date on ProcessInstanceLog (start_date)
+Hibernate: create index IDX_PInstLog_status on ProcessInstanceLog (status)
+Hibernate: create index IDX_PInstLog_correlation on ProcessInstanceLog (correlationKey)
+Hibernate: alter table QueryDefinitionStore drop constraint if exists UK1dmy087nhbykucpgjipcnyluv
+Hibernate: alter table QueryDefinitionStore add constraint UK1dmy087nhbykucpgjipcnyluv unique (qName)
+Hibernate: create index IDX_Reassign_Esc on Reassignment (Escalation_Reassignments_Id)
+Hibernate: create index IDX_ReassignPO_Entity on Reassignment_potentialOwners (entity_id)
+Hibernate: create index IDX_ReassignPO_Task on Reassignment_potentialOwners (task_id)
+Hibernate: create index IDX_Task_Initiator on Task (taskInitiator_id)
+Hibernate: create index IDX_Task_ActualOwner on Task (actualOwner_id)
+Hibernate: create index IDX_Task_CreatedBy on Task (createdBy_id)
+Hibernate: create index IDX_Task_processInstanceId on Task (processInstanceId)
+Hibernate: create index IDX_Task_processId on Task (processId)
+Hibernate: create index IDX_Task_status on Task (status)
+Hibernate: create index IDX_Task_archived on Task (archived)
+Hibernate: create index IDX_Task_workItemId on Task (workItemId)
+Hibernate: create index IDX_TaskComments_CreatedBy on task_comment (addedBy_id)
+Hibernate: create index IDX_TaskComments_Id on task_comment (TaskData_Comments_Id)
+Hibernate: create index IDX_TaskVariableImpl_taskId on TaskVariableImpl (taskId)
+Hibernate: create index IDX_TaskVariableImpl_pInstId on TaskVariableImpl (processInstanceId)
+Hibernate: create index IDX_TaskVariableImpl_processId on TaskVariableImpl (processId)
+Hibernate: create index IDX_VInstLog_pInstId on VariableInstanceLog (processInstanceId)
+Hibernate: create index IDX_VInstLog_varId on VariableInstanceLog (variableId)
+Hibernate: create index IDX_VInstLog_pId on VariableInstanceLog (processId)
+Hibernate: alter table Attachment add constraint FKd5xpm81gxg8n40167lbu5rbfb foreign key (attachedBy_id) references OrganizationalEntity
+Hibernate: alter table Attachment add constraint FKjj9psk52ifamilliyo16epwpc foreign key (TaskData_Attachments_Id) references Task
+Hibernate: alter table BooleanExpression add constraint FKqth56a8k6d8pv6ngsu2vjp4kj foreign key (Escalation_Constraints_Id) references Escalation
+Hibernate: alter table Deadline add constraint FK361ggw230po88svgfasg36i2w foreign key (Deadlines_StartDeadLine_Id) references Task
+Hibernate: alter table Deadline add constraint FKpeiadnoy228t35213t63c3imm foreign key (Deadlines_EndDeadLine_Id) references Task
+Hibernate: alter table Delegation_delegates add constraint FKewkdyi0wrgy9byp6abyglpcxq foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table Delegation_delegates add constraint FK85x3trafk3wfbrv719cafr591 foreign key (task_id) references Task
+Hibernate: alter table Escalation add constraint FK37v8ova8ti6jiblda7n6j298e foreign key (Deadline_Escalation_Id) references Deadline
+Hibernate: alter table EventTypes add constraint FKj0o3uve2nqo5yrjwrkc9jfttq foreign key (InstanceId) references ProcessInstanceInfo
+Hibernate: alter table I18NText add constraint FKthf8ix3t3opf9hya1s04hwsx8 foreign key (Notification_Subjects_Id) references Notification
+Hibernate: alter table I18NText add constraint FKg2jsybeuc8pbj8ek8xwxutuyo foreign key (Notification_Names_Id) references Notification
+Hibernate: alter table I18NText add constraint FKp0m7uhipskrljktvfeubdgfid foreign key (Notification_Documentation_Id) references Notification
+Hibernate: alter table I18NText add constraint FK6k8hmfvhko069970eghiy2ifp foreign key (Notification_Descriptions_Id) references Notification
+Hibernate: alter table I18NText add constraint FKqxgws3fnukyqlaet11tivqg5u foreign key (Reassignment_Documentation_Id) references Reassignment
+Hibernate: alter table I18NText add constraint FK8wn7sw34q6bifsi1pvl2b1yyb foreign key (Deadline_Documentation_Id) references Deadline
+Hibernate: alter table I18NText add constraint FKcd6eb4q62d9ab8p0di8pb99ch foreign key (Task_Subjects_Id) references Task
+Hibernate: alter table I18NText add constraint FKiogka67sji8fk4cp7a369895i foreign key (Task_Names_Id) references Task
+Hibernate: alter table I18NText add constraint FKrisdlmalotmk64mdeqpo4s5m0 foreign key (Task_Descriptions_Id) references Task
+Hibernate: alter table Notification add constraint FKoxq5uqfg4ylwyijsg2ubyflna foreign key (Escalation_Notifications_Id) references Escalation
+Hibernate: alter table Notification_BAs add constraint FK378pb1cvjv54w4ljqpw99s3wr foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table Notification_BAs add constraint FKb123fgeomc741s9yc014421yy foreign key (task_id) references Notification
+Hibernate: alter table Notification_Recipients add constraint FKot769nimyq1jvw0m61pgsq5g3 foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table Notification_Recipients add constraint FKn7v944d0hw37bh0auv4gr3hsf foreign key (task_id) references Notification
+Hibernate: alter table PeopleAssignments_BAs add constraint FKa90cdfgc4km384n1ataqigq67 foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table PeopleAssignments_BAs add constraint FKt4xs0glwhbsa0xwg69r6xduv9 foreign key (task_id) references Task
+Hibernate: alter table PeopleAssignments_ExclOwners add constraint FK5ituvd6t8uvp63hsx6282xo6h foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table PeopleAssignments_ExclOwners add constraint FKqxbjm1b3dl7w8w2f2y6sk0fv8 foreign key (task_id) references Task
+Hibernate: alter table PeopleAssignments_PotOwners add constraint FKsa3rrrjsm1qw98ajbbu2s7cjr foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table PeopleAssignments_PotOwners add constraint FKh8oqmk4iuh2pmpgby6g8r3jd1 foreign key (task_id) references Task
+Hibernate: alter table PeopleAssignments_Recipients add constraint FKrd0h9ud1bhs9waf2mdmiv6j2r foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table PeopleAssignments_Recipients add constraint FK9gnbv6bplxkxoedj35vg8n7ir foreign key (task_id) references Task
+Hibernate: alter table PeopleAssignments_Stakeholders add constraint FK9uy76cu650rg1nnkrtjwj1e9t foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table PeopleAssignments_Stakeholders add constraint FKaeyk4nwslvx0jywjomjq7083i foreign key (task_id) references Task
+Hibernate: alter table Reassignment add constraint FKessy30safh44b30f1cfoujv2k foreign key (Escalation_Reassignments_Id) references Escalation
+Hibernate: alter table Reassignment_potentialOwners add constraint FKsqrmpvehlc4qe9i0km22nmkjl foreign key (entity_id) references OrganizationalEntity
+Hibernate: alter table Reassignment_potentialOwners add constraint FKftegfexshix752bh2jfxf6bnh foreign key (task_id) references Reassignment
+Hibernate: alter table Task add constraint FK48d1bfgwf0jqow1yk8ku4xcpi foreign key (taskInitiator_id) references OrganizationalEntity
+Hibernate: alter table Task add constraint FKpmkxvqq63aed2y2boruu53a0s foreign key (actualOwner_id) references OrganizationalEntity
+Hibernate: alter table Task add constraint FKexuboqnbla7jfyyesyo61ucmb foreign key (createdBy_id) references OrganizationalEntity
+Hibernate: alter table task_comment add constraint FKqb4mkarf209y9546w7n75lb7a foreign key (addedBy_id) references OrganizationalEntity
+Hibernate: alter table task_comment add constraint FKm2mwc1ukcpdsiqwgkoroy6ise foreign key (TaskData_Comments_Id) references Task
+2020-04-08 13:40:32.962  INFO 18835 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'org.jbpm.audit.persistence.jpa'
+2020-04-08 13:40:32.977  INFO 18835 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: org.jbpm.domain]
+2020-04-08 13:40:33.128  INFO 18835 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-08 13:40:33.234  INFO 18835 --- [           main] org.hibernate.orm.beans                  : HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-04-08 13:40:33.388  INFO 18835 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2020-04-08 13:40:33.635  WARN 18835 --- [           main] o.h.dialect.function.TemplateRenderer    : HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2020-04-08 13:40:33.635  WARN 18835 --- [           main] o.h.dialect.function.TemplateRenderer    : HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2020-04-08 13:40:33.663  INFO 18835 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'org.jbpm.domain'
+2020-04-08 13:40:33.844  WARN 18835 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 13:40:34.207  INFO 18835 --- [           main] com.arjuna.ats.arjuna                    : ARJUNA012170: TransactionStatusManager started on port 55152 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+2020-04-08 13:40:34.371  INFO 18835 --- [           main] c.c.h.jms.receivers.CaseAuditReceiver    : Setting case emf to parent
+2020-04-08 13:40:34.395  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : META-INF/history-Servicesorm.xml loaded : class path resource [META-INF/history-Servicesorm.xml]
+2020-04-08 13:40:34.396  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : META-INF/history-TaskAuditorm.xml loaded : class path resource [META-INF/history-TaskAuditorm.xml]
+2020-04-08 13:40:34.397  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : META-INF/history-CaseMgmtorm.xml loaded : class path resource [META-INF/history-CaseMgmtorm.xml]
+2020-04-08 13:40:34.398  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesByDefinition query on history emf
+2020-04-08 13:40:34.407  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByProcessInstanceIdNodeName query on history emf
+2020-04-08 13:40:34.414  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByProcessDefinition query on history emf
+2020-04-08 13:40:34.418  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorByIdSkipAckCheck query on history emf
+2020-04-08 13:40:34.419  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceActiveNodes query on history emf
+2020-04-08 13:40:34.425  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesByVariableNameAndValue query on history emf
+2020-04-08 13:40:34.427  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrors query on history emf
+2020-04-08 13:40:34.427  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstanceDataItemsByName query on history emf
+2020-04-08 13:40:34.430  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseTasksAsPotentialOwner query on history emf
+2020-04-08 13:40:34.442  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesAnyRole query on history emf
+2020-04-08 13:40:34.443  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByVariableName query on history emf
+2020-04-08 13:40:34.444  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllGroupAuditTasksByUser query on history emf
+2020-04-08 13:40:34.447  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getDeploymentUnit query on history emf
+2020-04-08 13:40:34.447  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllAuditTasksByUser query on history emf
+2020-04-08 13:40:34.447  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByDeploymentId query on history emf
+2020-04-08 13:40:34.448  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesOwnedBy query on history emf
+2020-04-08 13:40:34.450  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getTaskInstanceByWorkItemId query on history emf
+2020-04-08 13:40:34.456  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByStatusAndInitiator query on history emf
+2020-04-08 13:40:34.457  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesByDeployment query on history emf
+2020-04-08 13:40:34.458  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceByCorrelationKey query on history emf
+2020-04-08 13:40:34.459  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getDeploymentUnitsByDate query on history emf
+2020-04-08 13:40:34.460  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByProcessId query on history emf
+2020-04-08 13:40:34.460  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllTasksEventsByProcessInstanceId query on history emf
+2020-04-08 13:40:34.461  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering deleteBAMTaskSummariesForTask query on history emf
+2020-04-08 13:40:34.462  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceFullHistory query on history emf
+2020-04-08 13:40:34.463  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllTasksEvents query on history emf
+2020-04-08 13:40:34.463  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAuditTaskById query on history emf
+2020-04-08 13:40:34.463  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByCorrelationKey query on history emf
+2020-04-08 13:40:34.464  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByDeploymentId query on history emf
+2020-04-08 13:40:34.465  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAuthorizationToCaseInstance query on history emf
+2020-04-08 13:40:34.465  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering DeleteTaskVariableForTask query on history emf
+2020-04-08 13:40:34.465  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllBAMTaskSummaries query on history emf
+2020-04-08 13:40:34.466  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByVariableNameAndValue query on history emf
+2020-04-08 13:40:34.467  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getTaskInstancesByProcessInstanceId query on history emf
+2020-04-08 13:40:34.467  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceFullHistoryByType query on history emf
+2020-04-08 13:40:34.468  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllAuditTasks query on history emf
+2020-04-08 13:40:34.468  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering findCaseIdContextMapping query on history emf
+2020-04-08 13:40:34.469  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesByVariableName query on history emf
+2020-04-08 13:40:34.470  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstances query on history emf
+2020-04-08 13:40:34.471  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getNodeInstanceForWorkItem query on history emf
+2020-04-08 13:40:34.472  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getSubCaseInstancesByParentCaseIds query on history emf
+2020-04-08 13:40:34.473  WARN 18835 --- [           main] o.h.dialect.function.TemplateRenderer    : HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2020-04-08 13:40:34.474  WARN 18835 --- [           main] o.h.dialect.function.TemplateRenderer    : HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2020-04-08 13:40:34.474  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCompletedNodesForCase query on history emf
+2020-04-08 13:40:34.475  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseTasksAsStakeholder query on history emf
+2020-04-08 13:40:34.477  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getNodeInstancesByNodeType query on history emf
+2020-04-08 13:40:34.478  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstancesByRole query on history emf
+2020-04-08 13:40:34.479  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorById query on history emf
+2020-04-08 13:40:34.480  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByStatus query on history emf
+2020-04-08 13:40:34.481  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByProcessIdAndStatus query on history emf
+2020-04-08 13:40:34.482  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstanceById query on history emf
+2020-04-08 13:40:34.483  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering deleteAllTaskEvents query on history emf
+2020-04-08 13:40:34.483  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getQueryDefinitions query on history emf
+2020-04-08 13:40:34.483  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByTaskId query on history emf
+2020-04-08 13:40:34.484  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getTaskErrors query on history emf
+2020-04-08 13:40:34.485  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering deleteTaskEventsForTask query on history emf
+2020-04-08 13:40:34.485  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering findCaseIdInfoByPrefix query on history emf
+2020-04-08 13:40:34.485  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseTasksAsBusinessAdmin query on history emf
+2020-04-08 13:40:34.488  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getNodeInstancesByCorrelationKeyAndNodeType query on history emf
+2020-04-08 13:40:34.489  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByTaskName query on history emf
+2020-04-08 13:40:34.490  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByTaskNameProcessIdDeploymentId query on history emf
+2020-04-08 13:40:34.491  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering deleteAllBAMTaskSummaries query on history emf
+2020-04-08 13:40:34.491  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstanceDataItemsByType query on history emf
+2020-04-08 13:40:34.492  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByProcessIdAndStatusAndInitiator query on history emf
+2020-04-08 13:40:34.492  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getQueryDefinitionByName query on history emf
+2020-04-08 13:40:34.493  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAuthorizationToCaseInstanceByRole query on history emf
+2020-04-08 13:40:34.493  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceCompletedNodes query on history emf
+2020-04-08 13:40:34.494  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByParent query on history emf
+2020-04-08 13:40:34.495  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getTaskInstanceById query on history emf
+2020-04-08 13:40:34.496  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllAdminAuditTasksByUser query on history emf
+2020-04-08 13:40:34.499  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getActiveNodesForCaseAndStage query on history emf
+2020-04-08 13:40:34.500  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByProcessInstanceId query on history emf
+2020-04-08 13:40:34.501  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getVariableHistory query on history emf
+2020-04-08 13:40:34.507  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getErrorsByTaskNameProcessId query on history emf
+2020-04-08 13:40:34.507  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByProcessNameAndStatusAndInitiator query on history emf
+2020-04-08 13:40:34.508  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstances query on history emf
+2020-04-08 13:40:34.509  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByCorrelationKeyAndStatus query on history emf
+2020-04-08 13:40:34.510  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getCaseInstanceDataItems query on history emf
+2020-04-08 13:40:34.510  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getActiveNodesForCase query on history emf
+2020-04-08 13:40:34.512  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstanceById query on history emf
+2020-04-08 13:40:34.513  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getDeploymentUnitsByState query on history emf
+2020-04-08 13:40:34.513  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getVariablesCurrentState query on history emf
+2020-04-08 13:40:34.514  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getAllAuditTasksByStatus query on history emf
+2020-04-08 13:40:34.514  INFO 18835 --- [           main] c.c.history.jpa.CustomQueryManager       : Registering getProcessInstancesByProcessNameAndStatus query on history emf
+2020-04-08 13:40:34.669  INFO 18835 --- [           main] o.k.s.s.a.KieServerAutoConfiguration     : KieServer (id business-application-service (name business-application-service)) started initialization process
+2020-04-08 13:40:34.681  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Starting server in 'DEVELOPMENT' mode.
+2020-04-08 13:40:34.683  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Selected startup strategy ControllerBasedStartupStrategy - deploys kie containers given by controller ignoring locally defined
+2020-04-08 13:40:34.684  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Configured 'KieServerStateFileRepository' server state repository
+2020-04-08 13:40:34.716  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Server Default Extension has been successfully registered as server extension
+2020-04-08 13:40:34.717  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Drools KIE Server extension has been successfully registered as server extension
+2020-04-08 13:40:34.729  INFO 18835 --- [           main] o.k.s.api.marshalling.MarshallerFactory  : Marshaller extensions init
+2020-04-08 13:40:34.739  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : jBPM KIE Server extension has been successfully registered as server extension
+2020-04-08 13:40:34.739  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Case-Mgmt KIE Server extension has been successfully registered as server extension
+2020-04-08 13:40:34.808  INFO 18835 --- [           main] o.k.s.s.j.u.f.r.BootstrapFormRenderer    : Boostrap Form renderer templates loaded successfully.
+2020-04-08 13:40:34.811  INFO 18835 --- [           main] o.k.s.s.j.u.f.r.PatternflyFormRenderer   : patternfly Form renderer templates loaded successfully.
+2020-04-08 13:40:34.813  INFO 18835 --- [           main] o.k.s.s.j.u.f.r.PatternflyFormRenderer   : workbench Form renderer templates loaded successfully.
+2020-04-08 13:40:34.814  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : jBPM-UI KIE Server extension has been successfully registered as server extension
+2020-04-08 13:40:34.814  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : DMN KIE Server extension has been successfully registered as server extension
+2020-04-08 13:40:34.816  INFO 18835 --- [           main] o.k.s.s.impl.policy.PolicyManager        : Registered KeepLatestContainerOnlyPolicy{interval=0 ms} policy under name KeepLatestOnly
+2020-04-08 13:40:34.817  INFO 18835 --- [           main] o.k.s.s.impl.policy.PolicyManager        : Policy manager started successfully, activated policies are []
+2020-04-08 13:40:34.819  INFO 18835 --- [           main] o.k.s.services.impl.ContainerManager     : About to install containers '[KieContainerResource [containerId=business-application-kjar-1_0-SNAPSHOT, releaseId=org.redhat.services:kjar:0.0.1-SNAPSHOT, resolvedReleaseId=null, status=STARTED], KieContainerResource [containerId=sample-case-1_0-SNAPSHOT, releaseId=com.myspace:SampleCaseProject:1.0.0-SNAPSHOT, resolvedReleaseId=null, status=STARTED]]' on kie server 'KieServer{id='business-application-service'name='business-application-service'version='7.33.0.Final-redhat-00002'location='http://localhost:8090/rest/server'}'
+2020-04-08 13:40:34.836  WARN 18835 --- [           main] o.a.m.i.embedder.MavenSettings           : Environment variable M2_HOME is not set
+2020-04-08 13:40:40.338  INFO 18835 --- [           main] o.j.r.m.impl.AbstractRuntimeManager      : PerProcessInstanceRuntimeManager is created for business-application-kjar-1_0-SNAPSHOT
+2020-04-08 13:40:40.475  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Container business-application-kjar-1_0-SNAPSHOT (for release id org.redhat.services:kjar:0.0.1-SNAPSHOT) successfully started
+2020-04-08 13:40:41.236  INFO 18835 --- [           main] o.j.r.m.impl.AbstractRuntimeManager      : PerCaseRuntimeManager is created for sample-case-1_0-SNAPSHOT
+2020-04-08 13:40:41.257  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : Container sample-case-1_0-SNAPSHOT (for release id com.myspace:SampleCaseProject:1.0.0-SNAPSHOT) successfully started
+2020-04-08 13:40:41.261  INFO 18835 --- [           main] o.k.server.services.impl.KieServerImpl   : KieServer business-application-service is ready to receive requests
+2020-04-08 13:40:41.293  INFO 18835 --- [           main] o.k.s.s.a.KieServerAutoConfiguration     : KieServer (id business-application-service) started successfully
+2020-04-08 13:40:41.407  INFO 18835 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bd074d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@554b571b, org.springframework.security.web.header.HeaderWriterFilter@54398386, org.springframework.web.filter.CorsFilter@34fcbc36, org.springframework.security.web.authentication.logout.LogoutFilter@3f13ab39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7be7236d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@486e3116, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f937c0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c55c035, org.springframework.security.web.session.SessionManagementFilter@3408fdb8, org.springframework.security.web.access.ExceptionTranslationFilter@7cd91400, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a3d9ed3]
+2020-04-08 13:40:41.417  INFO 18835 --- [           main] c.c.h.j.receivers.EmbeddedBrokerConfig   : Initializaint Embedded AMQ broker
+2020-04-08 13:40:42.173  INFO 18835 --- [           main] c.c.h.service.HistoServiceRepository     : Instantiating CustomRuntimeDataServiceImpl
+2020-04-08 13:40:42.212  INFO 18835 --- [           main] c.c.h.service.HistoServiceRepository     : Instantiating CustomRuntimeDataServiceBase
+2020-04-08 13:40:42.330  INFO 18835 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 13:40:42.395  INFO 18835 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-04-08 13:40:42.847  INFO 18835 --- [           main] org.apache.cxf.endpoint.ServerImpl       : Setting the server's publish address to be /
+2020-04-08 13:40:43.020  INFO 18835 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-04-08 13:40:43.024  INFO 18835 --- [           main] com.company.Application                  : Started Application in 14.362 seconds (JVM running for 14.877)
+2020-04-08 13:40:50.214  INFO 18835 --- [0.0-8090-exec-1] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:40:50.224  WARN 18835 --- [0.0-8090-exec-1] o.drools.persistence.PersistableRunner   : Could not commit session
+
+java.lang.NullPointerException: null
+	at com.company.history.jms.producers.JMSProcessEventListener.getProcessInstanceDeploymentId(JMSProcessEventListener.java:179) ~[classes/:na]
+	at com.company.history.jms.producers.JMSProcessEventListener.afterVariableChanged(JMSProcessEventListener.java:118) ~[classes/:na]
+	at org.drools.core.event.ProcessEventSupport.fireAfterVariableChanged(ProcessEventSupport.java:155) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.context.variable.VariableScopeInstance.setVariable(VariableScopeInstance.java:120) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.AbstractProcessInstanceFactory.createProcessInstance(AbstractProcessInstanceFactory.java:62) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:262) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.createProcessInstance(ProcessRuntimeImpl.java:244) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:227) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.startProcess(StatefulKnowledgeSessionImpl.java:1898) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:146) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:44) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.startProcess(CommandBasedStatefulKnowledgeSession.java:567) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.startProcess(ProcessServiceImpl.java:144) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:134) [jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:51) [jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.execute(CommandBasedStatefulKnowledgeSession.java:533) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.execute(ProcessServiceImpl.java:704) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.CaseServiceImpl.startCase(CaseServiceImpl.java:187) [jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.services.casemgmt.CaseManagementServiceBase.startCase(CaseManagementServiceBase.java:143) [kie-server-services-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.lambda$startCase$0(CaseResource.java:178) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:61) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:95) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.startCase(CaseResource.java:173) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:193) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:103) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:216) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:203) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_241]
+
+2020-04-08 13:40:50.227  WARN 18835 --- [0.0-8090-exec-1] o.drools.persistence.PersistableRunner   : Could not commit session
+
+java.lang.NullPointerException: null
+	at com.company.history.jms.producers.JMSProcessEventListener.getProcessInstanceDeploymentId(JMSProcessEventListener.java:179) ~[classes/:na]
+	at com.company.history.jms.producers.JMSProcessEventListener.afterVariableChanged(JMSProcessEventListener.java:118) ~[classes/:na]
+	at org.drools.core.event.ProcessEventSupport.fireAfterVariableChanged(ProcessEventSupport.java:155) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.context.variable.VariableScopeInstance.setVariable(VariableScopeInstance.java:120) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.AbstractProcessInstanceFactory.createProcessInstance(AbstractProcessInstanceFactory.java:62) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:262) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.createProcessInstance(ProcessRuntimeImpl.java:244) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:227) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.startProcess(StatefulKnowledgeSessionImpl.java:1898) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:146) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:44) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.startProcess(CommandBasedStatefulKnowledgeSession.java:567) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.startProcess(ProcessServiceImpl.java:144) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:134) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:51) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) [drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.execute(CommandBasedStatefulKnowledgeSession.java:533) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.execute(ProcessServiceImpl.java:704) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.CaseServiceImpl.startCase(CaseServiceImpl.java:187) [jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.services.casemgmt.CaseManagementServiceBase.startCase(CaseManagementServiceBase.java:143) [kie-server-services-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.lambda$startCase$0(CaseResource.java:178) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:61) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:95) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.startCase(CaseResource.java:173) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:193) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:103) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:216) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:203) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_241]
+
+2020-04-08 13:40:50.267 ERROR 18835 --- [0.0-8090-exec-1] o.j.r.m.i.e.ExecutionErrorHandlerImpl    : Unexpected error during processing 
+
+java.lang.NullPointerException: null
+	at com.company.history.jms.producers.JMSProcessEventListener.getProcessInstanceDeploymentId(JMSProcessEventListener.java:179) ~[classes/:na]
+	at com.company.history.jms.producers.JMSProcessEventListener.afterVariableChanged(JMSProcessEventListener.java:118) ~[classes/:na]
+	at org.drools.core.event.ProcessEventSupport.fireAfterVariableChanged(ProcessEventSupport.java:155) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.context.variable.VariableScopeInstance.setVariable(VariableScopeInstance.java:120) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.AbstractProcessInstanceFactory.createProcessInstance(AbstractProcessInstanceFactory.java:62) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:262) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.createProcessInstance(ProcessRuntimeImpl.java:244) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:227) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.startProcess(StatefulKnowledgeSessionImpl.java:1898) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:146) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:44) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.startProcess(CommandBasedStatefulKnowledgeSession.java:567) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.startProcess(ProcessServiceImpl.java:144) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:134) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:51) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) [jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) [drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.execute(CommandBasedStatefulKnowledgeSession.java:533) [drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.execute(ProcessServiceImpl.java:704) [jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.CaseServiceImpl.startCase(CaseServiceImpl.java:187) [jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.services.casemgmt.CaseManagementServiceBase.startCase(CaseManagementServiceBase.java:143) [kie-server-services-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.lambda$startCase$0(CaseResource.java:178) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:61) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:95) ~[kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.startCase(CaseResource.java:173) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:193) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:103) ~[cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) ~[cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:216) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276) ~[cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:203) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_241]
+
+2020-04-08 13:40:50.271 ERROR 18835 --- [0.0-8090-exec-1] o.k.s.r.r.casemgmt.AbstractCaseResource  : Unexpected error during processing null
+
+java.lang.NullPointerException: null
+	at com.company.history.jms.producers.JMSProcessEventListener.getProcessInstanceDeploymentId(JMSProcessEventListener.java:179) ~[classes/:na]
+	at com.company.history.jms.producers.JMSProcessEventListener.afterVariableChanged(JMSProcessEventListener.java:118) ~[classes/:na]
+	at org.drools.core.event.ProcessEventSupport.fireAfterVariableChanged(ProcessEventSupport.java:155) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.context.variable.VariableScopeInstance.setVariable(VariableScopeInstance.java:120) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.AbstractProcessInstanceFactory.createProcessInstance(AbstractProcessInstanceFactory.java:62) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:262) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.createProcessInstance(ProcessRuntimeImpl.java:244) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.process.instance.ProcessRuntimeImpl.startProcess(ProcessRuntimeImpl.java:227) ~[jbpm-flow-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.startProcess(StatefulKnowledgeSessionImpl.java:1898) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:146) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.runtime.process.StartCorrelatedProcessCommand.execute(StartCorrelatedProcessCommand.java:44) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.startProcess(CommandBasedStatefulKnowledgeSession.java:567) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.startProcess(ProcessServiceImpl.java:144) ~[jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:134) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.command.StartCaseCommand.execute(StartCaseCommand.java:51) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatch(PseudoClockRunner.java:102) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.executeBatches(PseudoClockRunner.java:69) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:61) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.fluent.impl.PseudoClockRunner.execute(PseudoClockRunner.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:597) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner$TransactionInterceptor.execute(PersistableRunner.java:563) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.internalExecute(OptimisticLockRetryInterceptor.java:102) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:83) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jpa.OptimisticLockRetryInterceptor.execute(OptimisticLockRetryInterceptor.java:44) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:73) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.jta.TransactionLockInterceptor.execute(TransactionLockInterceptor.java:45) ~[drools-persistence-api-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.AbstractInterceptor.executeNext(AbstractInterceptor.java:39) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.internalExecute(ExecutionErrorHandlerInterceptor.java:66) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:52) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.runtime.manager.impl.error.ExecutionErrorHandlerInterceptor.execute(ExecutionErrorHandlerInterceptor.java:29) ~[jbpm-runtime-manager-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:398) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.persistence.PersistableRunner.execute(PersistableRunner.java:66) ~[drools-persistence-jpa-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:37) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.runtime.InternalLocalRunner.execute(InternalLocalRunner.java:41) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession.execute(CommandBasedStatefulKnowledgeSession.java:533) ~[drools-core-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.kie.services.impl.ProcessServiceImpl.execute(ProcessServiceImpl.java:704) ~[jbpm-kie-services-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.jbpm.casemgmt.impl.CaseServiceImpl.startCase(CaseServiceImpl.java:187) ~[jbpm-case-mgmt-impl-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.services.casemgmt.CaseManagementServiceBase.startCase(CaseManagementServiceBase.java:143) ~[kie-server-services-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.lambda$startCase$0(CaseResource.java:178) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:61) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.AbstractCaseResource.invokeCaseOperation(AbstractCaseResource.java:95) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at org.kie.server.remote.rest.casemgmt.CaseResource.startCase(CaseResource.java:173) [kie-server-rest-case-mgmt-7.33.0.Final-redhat-00002.jar:7.33.0.Final-redhat-00002]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:193) [cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:103) [cxf-rt-frontend-jaxrs-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) [cxf-core-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:216) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276) [cxf-rt-transports-http-3.2.6.jar:3.2.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:203) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+
+2020-04-08 13:41:43.289  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.301  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.VariableInstanceLog>
+  <VARIABLE__LOG__LENGTH>255</VARIABLE__LOG__LENGTH>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.289 UTC</date>
+  <variableInstanceId>initiator</variableInstanceId>
+  <variableId>initiator</variableId>
+  <value>anton</value>
+  <oldValue></oldValue>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+</org.jbpm.process.audit.VariableInstanceLog>
+2020-04-08 13:41:43.344  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@619a6887 }
+2020-04-08 13:41:43.371  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.373  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.ProcessInstanceLog>
+  <CORRELATION__KEY__LOG__LENGTH>255</CORRELATION__KEY__LOG__LENGTH>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <start>2020-04-08 11:41:43.373 UTC</start>
+  <status>1</status>
+  <parentProcessInstanceId>-1</parentProcessInstanceId>
+  <identity>anton</identity>
+  <processVersion>1.0</processVersion>
+  <processName>JMSTest</processName>
+  <correlationKey>2</correlationKey>
+  <processType>1</processType>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <processInstanceDescription>JMSTest</processInstanceDescription>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.ProcessInstanceLog>
+2020-04-08 13:41:43.374  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4db9420d }
+2020-04-08 13:41:43.383  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@12fe09af }
+2020-04-08 13:41:43.387  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into VariableInstanceLog (id, log_date, externalId, oldValue, processId, processInstanceId, value, variableId, variableInstanceId) values (null, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.405  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.407  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.404 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>0</nodeInstanceId>
+  <nodeId>_DF725249-E03F-4231-A574-CF95C7DCEC1C</nodeId>
+  <nodeType>StartNode</nodeType>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.408  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@33a2a1cf }
+2020-04-08 13:41:43.411  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4644cd4 }
+2020-04-08 13:41:43.412  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.412  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into ProcessInstanceLog (id, correlationKey, duration, end_date, externalId, user_identity, outcome, parentProcessInstanceId, processId, processInstanceDescription, processInstanceId, processName, processType, processVersion, slaCompliance, sla_due_date, start_date, status) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.414  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.412 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>1</nodeInstanceId>
+  <nodeId>_9CF32F53-7053-43A9-88C3-D37FDBA45765</nodeId>
+  <nodeName>sample script</nodeName>
+  <nodeType>ActionNode</nodeType>
+  <connection>_4030EF43-FBE5-42B1-8AD3-352779AF10B7</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.415  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@1a9942b2 }
+process started
+2020-04-08 13:41:43.419  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.421  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.419 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>2</nodeInstanceId>
+  <nodeId>_1296136C-8494-420E-A996-66A8CCED3196</nodeId>
+  <nodeType>Split</nodeType>
+  <connection>_19840EB1-3D76-4C8D-BF09-EBF6176F5787</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.422  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@394553cd }
+2020-04-08 13:41:43.423  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@149c6531 }
+2020-04-08 13:41:43.425  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+2020-04-08 13:41:43.425  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.428  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.424 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>4</nodeInstanceId>
+  <nodeId>_6846E93C-72F1-4A80-9C9A-AC6269C0D3B1</nodeId>
+  <nodeName>Task1</nodeName>
+  <nodeType>HumanTaskNode</nodeType>
+  <connection>_D2736DB3-F3B5-46B7-8C14-98B6582713F6</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.429  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@372fe9be }
+2020-04-08 13:41:43.435  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@117abef0 }
+2020-04-08 13:41:43.436  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.447  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@247b7aa3 }
+2020-04-08 13:41:43.448  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.457  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7e062af5 }
+2020-04-08 13:41:43.458  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.607  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending Task Audit message 
+<org.jbpm.services.task.audit.impl.model.AuditTaskData>
+  <taskInputs>
+    <org.jbpm.services.task.audit.impl.model.TaskVariableImpl>
+      <VARIABLE__LOG__LENGTH>4000</VARIABLE__LOG__LENGTH>
+      <taskId>1</taskId>
+      <processInstanceId>2</processInstanceId>
+      <processId>TimerProject.SampleProcess</processId>
+      <name>sampleVar1</name>
+      <value>sampleValue1</value>
+      <type>INPUT</type>
+      <modificationDate>2020-04-08 11:41:43.606 UTC</modificationDate>
+    </org.jbpm.services.task.audit.impl.model.TaskVariableImpl>
+  </taskInputs>
+</org.jbpm.services.task.audit.impl.model.AuditTaskData>
+2020-04-08 13:41:43.608  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@200c2bb6 }
+2020-04-08 13:41:43.613  INFO 18835 --- [enerContainer-1] c.c.h.jms.receivers.TaskAuditReceiver    : [Task Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7e02637 }
+2020-04-08 13:41:43.614  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending Task Audit message 
+<org.jbpm.services.task.audit.impl.model.AuditTaskData>
+  <auditTask>
+    <taskId>1</taskId>
+    <status>Reserved</status>
+    <activationTime>2020-04-08 11:41:43.440 UTC</activationTime>
+    <name>Task1</name>
+    <description></description>
+    <priority>0</priority>
+    <createdBy></createdBy>
+    <actualOwner>anton</actualOwner>
+    <createdOn reference="../activationTime"/>
+    <processInstanceId>2</processInstanceId>
+    <processId>TimerProject.SampleProcess</processId>
+    <processSessionId>4</processSessionId>
+    <parentId>-1</parentId>
+    <deploymentId>business-application-kjar-1_0-SNAPSHOT</deploymentId>
+    <workItemId>1</workItemId>
+    <lastModificationDate>2020-04-08 11:41:43.610 UTC</lastModificationDate>
+  </auditTask>
+  <taskEvents>
+    <org.jbpm.services.task.audit.impl.model.TaskEventImpl>
+      <taskId>1</taskId>
+      <workItemId>1</workItemId>
+      <type>ADDED</type>
+      <processInstanceId>2</processInstanceId>
+      <userId>TimerProject.SampleProcess</userId>
+      <logTime>2020-04-08 11:41:43.613 UTC</logTime>
+    </org.jbpm.services.task.audit.impl.model.TaskEventImpl>
+  </taskEvents>
+</org.jbpm.services.task.audit.impl.model.AuditTaskData>
+2020-04-08 13:41:43.615  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@3493bcbf }
+Hibernate: insert into TaskVariableImpl (id, modificationDate, name, processId, processInstanceId, taskId, type, value) values (null, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.618  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.626  INFO 18835 --- [enerContainer-1] c.c.h.jms.receivers.TaskAuditReceiver    : [Task Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@717c99d5 }
+Hibernate: select audittaski0_.id as id1_1_, audittaski0_.activationTime as activati2_1_, audittaski0_.actualOwner as actualOw3_1_, audittaski0_.createdBy as createdB4_1_, audittaski0_.createdOn as createdO5_1_, audittaski0_.deploymentId as deployme6_1_, audittaski0_.description as descript7_1_, audittaski0_.dueDate as dueDate8_1_, audittaski0_.lastModificationDate as lastModi9_1_, audittaski0_.name as name10_1_, audittaski0_.parentId as parentI11_1_, audittaski0_.priority as priorit12_1_, audittaski0_.processId as process13_1_, audittaski0_.processInstanceId as process14_1_, audittaski0_.processSessionId as process15_1_, audittaski0_.status as status16_1_, audittaski0_.taskId as taskId17_1_, audittaski0_.workItemId as workIte18_1_ from AuditTaskImpl audittaski0_ where audittaski0_.taskId=?
+Hibernate: insert into AuditTaskImpl (id, activationTime, actualOwner, createdBy, createdOn, deploymentId, description, dueDate, lastModificationDate, name, parentId, priority, processId, processInstanceId, processSessionId, status, taskId, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into TaskEvent (id, logTime, message, processInstanceId, taskId, type, userId, OPTLOCK, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.637  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.424 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>4</nodeInstanceId>
+  <nodeId>_6846E93C-72F1-4A80-9C9A-AC6269C0D3B1</nodeId>
+  <nodeName>Task1</nodeName>
+  <nodeType>HumanTaskNode</nodeType>
+  <workItemId>1</workItemId>
+  <connection>_D2736DB3-F3B5-46B7-8C14-98B6582713F6</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.639  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@1bdae66 }
+2020-04-08 13:41:43.640  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.645  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.640 UTC</date>
+  <type>1</type>
+  <nodeInstanceId>2</nodeInstanceId>
+  <nodeId>_1296136C-8494-420E-A996-66A8CCED3196</nodeId>
+  <nodeType>Split</nodeType>
+  <connection>_D2736DB3-F3B5-46B7-8C14-98B6582713F6</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.646  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7d3be3b5 }
+2020-04-08 13:41:43.646  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7aee7ef4 }
+Hibernate: select nodeinstan0_.id as id1_15_, nodeinstan0_.connection as connecti2_15_, nodeinstan0_.log_date as log_date3_15_, nodeinstan0_.externalId as external4_15_, nodeinstan0_.nodeContainerId as nodeCont5_15_, nodeinstan0_.nodeId as nodeId6_15_, nodeinstan0_.nodeInstanceId as nodeInst7_15_, nodeinstan0_.nodeName as nodeName8_15_, nodeinstan0_.nodeType as nodeType9_15_, nodeinstan0_.processId as process10_15_, nodeinstan0_.processInstanceId as process11_15_, nodeinstan0_.referenceId as referen12_15_, nodeinstan0_.slaCompliance as slaComp13_15_, nodeinstan0_.sla_due_date as sla_due14_15_, nodeinstan0_.type as type15_15_, nodeinstan0_.workItemId as workIte16_15_ from NodeInstanceLog nodeinstan0_ where nodeinstan0_.nodeInstanceId=? and nodeinstan0_.type=0
+2020-04-08 13:41:43.648  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.648  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: update NodeInstanceLog set connection=?, log_date=?, externalId=?, nodeContainerId=?, nodeId=?, nodeInstanceId=?, nodeName=?, nodeType=?, processId=?, processInstanceId=?, referenceId=?, slaCompliance=?, sla_due_date=?, type=?, workItemId=? where id=?
+2020-04-08 13:41:43.652  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.648 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>3</nodeInstanceId>
+  <nodeId>_BCE1498D-E853-4ADC-A5AB-6789CB89938D</nodeId>
+  <nodeName>Task2</nodeName>
+  <nodeType>HumanTaskNode</nodeType>
+  <connection>_92C54A5E-2742-45BA-B5E6-353DBBCF33EB</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.653  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@375b120a }
+2020-04-08 13:41:43.658  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@cdf1a7e }
+2020-04-08 13:41:43.658  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.660  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending Task Audit message 
+<org.jbpm.services.task.audit.impl.model.AuditTaskData>
+  <taskInputs>
+    <org.jbpm.services.task.audit.impl.model.TaskVariableImpl>
+      <VARIABLE__LOG__LENGTH>4000</VARIABLE__LOG__LENGTH>
+      <taskId>2</taskId>
+      <processInstanceId>2</processInstanceId>
+      <processId>TimerProject.SampleProcess</processId>
+      <name>sampleValue2</name>
+      <value>sampleValue2</value>
+      <type>INPUT</type>
+      <modificationDate>2020-04-08 11:41:43.660 UTC</modificationDate>
+    </org.jbpm.services.task.audit.impl.model.TaskVariableImpl>
+  </taskInputs>
+</org.jbpm.services.task.audit.impl.model.AuditTaskData>
+2020-04-08 13:41:43.661  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@a29cd74 }
+2020-04-08 13:41:43.663  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending Task Audit message 
+<org.jbpm.services.task.audit.impl.model.AuditTaskData>
+  <auditTask>
+    <taskId>2</taskId>
+    <status>Reserved</status>
+    <activationTime>2020-04-08 11:41:43.656 UTC</activationTime>
+    <name>Task2</name>
+    <description></description>
+    <priority>0</priority>
+    <createdBy></createdBy>
+    <actualOwner>totallyRandomUser</actualOwner>
+    <createdOn reference="../activationTime"/>
+    <processInstanceId>2</processInstanceId>
+    <processId>TimerProject.SampleProcess</processId>
+    <processSessionId>4</processSessionId>
+    <parentId>-1</parentId>
+    <deploymentId>business-application-kjar-1_0-SNAPSHOT</deploymentId>
+    <workItemId>2</workItemId>
+    <lastModificationDate>2020-04-08 11:41:43.662 UTC</lastModificationDate>
+  </auditTask>
+  <taskEvents>
+    <org.jbpm.services.task.audit.impl.model.TaskEventImpl>
+      <taskId>2</taskId>
+      <workItemId>2</workItemId>
+      <type>ADDED</type>
+      <processInstanceId>2</processInstanceId>
+      <userId>TimerProject.SampleProcess</userId>
+      <logTime>2020-04-08 11:41:43.663 UTC</logTime>
+    </org.jbpm.services.task.audit.impl.model.TaskEventImpl>
+  </taskEvents>
+</org.jbpm.services.task.audit.impl.model.AuditTaskData>
+2020-04-08 13:41:43.664  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.producers.JMSTaskEventListener   : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7211b893 }
+2020-04-08 13:41:43.665  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.667  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4c6f2e22 }
+2020-04-08 13:41:43.668  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.676  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.648 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>3</nodeInstanceId>
+  <nodeId>_BCE1498D-E853-4ADC-A5AB-6789CB89938D</nodeId>
+  <nodeName>Task2</nodeName>
+  <nodeType>HumanTaskNode</nodeType>
+  <workItemId>2</workItemId>
+  <connection>_92C54A5E-2742-45BA-B5E6-353DBBCF33EB</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.676  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@2242bd3a }
+2020-04-08 13:41:43.677  INFO 18835 --- [enerContainer-1] c.c.h.jms.receivers.TaskAuditReceiver    : [Task Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@5acc10d7 }
+2020-04-08 13:41:43.678  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+Hibernate: insert into TaskVariableImpl (id, modificationDate, name, processId, processInstanceId, taskId, type, value) values (null, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.682  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.678 UTC</date>
+  <type>1</type>
+  <nodeInstanceId>2</nodeInstanceId>
+  <nodeId>_1296136C-8494-420E-A996-66A8CCED3196</nodeId>
+  <nodeType>Split</nodeType>
+  <connection>_92C54A5E-2742-45BA-B5E6-353DBBCF33EB</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.683  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@1e94918f }
+2020-04-08 13:41:43.684  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.687  INFO 18835 --- [enerContainer-1] c.c.h.jms.receivers.TaskAuditReceiver    : [Task Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4e857bdf }
+Hibernate: select audittaski0_.id as id1_1_, audittaski0_.activationTime as activati2_1_, audittaski0_.actualOwner as actualOw3_1_, audittaski0_.createdBy as createdB4_1_, audittaski0_.createdOn as createdO5_1_, audittaski0_.deploymentId as deployme6_1_, audittaski0_.description as descript7_1_, audittaski0_.dueDate as dueDate8_1_, audittaski0_.lastModificationDate as lastModi9_1_, audittaski0_.name as name10_1_, audittaski0_.parentId as parentI11_1_, audittaski0_.priority as priorit12_1_, audittaski0_.processId as process13_1_, audittaski0_.processInstanceId as process14_1_, audittaski0_.processSessionId as process15_1_, audittaski0_.status as status16_1_, audittaski0_.taskId as taskId17_1_, audittaski0_.workItemId as workIte18_1_ from AuditTaskImpl audittaski0_ where audittaski0_.taskId=?
+Hibernate: insert into AuditTaskImpl (id, activationTime, actualOwner, createdBy, createdOn, deploymentId, description, dueDate, lastModificationDate, name, parentId, priority, processId, processInstanceId, processSessionId, status, taskId, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.689  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.419 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>2</nodeInstanceId>
+  <nodeId>_1296136C-8494-420E-A996-66A8CCED3196</nodeId>
+  <nodeType>Split</nodeType>
+  <connection>_19840EB1-3D76-4C8D-BF09-EBF6176F5787</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+Hibernate: insert into TaskEvent (id, logTime, message, processInstanceId, taskId, type, userId, OPTLOCK, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.690  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@51a82267 }
+2020-04-08 13:41:43.691  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.694  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.691 UTC</date>
+  <type>1</type>
+  <nodeInstanceId>1</nodeInstanceId>
+  <nodeId>_9CF32F53-7053-43A9-88C3-D37FDBA45765</nodeId>
+  <nodeName>sample script</nodeName>
+  <nodeType>ActionNode</nodeType>
+  <connection>_19840EB1-3D76-4C8D-BF09-EBF6176F5787</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.695  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4a550d8b }
+2020-04-08 13:41:43.696  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.698  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@6e9ac4da }
+Hibernate: select nodeinstan0_.id as id1_15_, nodeinstan0_.connection as connecti2_15_, nodeinstan0_.log_date as log_date3_15_, nodeinstan0_.externalId as external4_15_, nodeinstan0_.nodeContainerId as nodeCont5_15_, nodeinstan0_.nodeId as nodeId6_15_, nodeinstan0_.nodeInstanceId as nodeInst7_15_, nodeinstan0_.nodeName as nodeName8_15_, nodeinstan0_.nodeType as nodeType9_15_, nodeinstan0_.processId as process10_15_, nodeinstan0_.processInstanceId as process11_15_, nodeinstan0_.referenceId as referen12_15_, nodeinstan0_.slaCompliance as slaComp13_15_, nodeinstan0_.sla_due_date as sla_due14_15_, nodeinstan0_.type as type15_15_, nodeinstan0_.workItemId as workIte16_15_ from NodeInstanceLog nodeinstan0_ where nodeinstan0_.nodeInstanceId=? and nodeinstan0_.type=0
+2020-04-08 13:41:43.699  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: update NodeInstanceLog set connection=?, log_date=?, externalId=?, nodeContainerId=?, nodeId=?, nodeInstanceId=?, nodeName=?, nodeType=?, processId=?, processInstanceId=?, referenceId=?, slaCompliance=?, sla_due_date=?, type=?, workItemId=? where id=?
+2020-04-08 13:41:43.700  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.412 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>1</nodeInstanceId>
+  <nodeId>_9CF32F53-7053-43A9-88C3-D37FDBA45765</nodeId>
+  <nodeName>sample script</nodeName>
+  <nodeType>ActionNode</nodeType>
+  <connection>_4030EF43-FBE5-42B1-8AD3-352779AF10B7</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.701  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@ce8b9cf }
+2020-04-08 13:41:43.702  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.705  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.702 UTC</date>
+  <type>1</type>
+  <nodeInstanceId>0</nodeInstanceId>
+  <nodeId>_DF725249-E03F-4231-A574-CF95C7DCEC1C</nodeId>
+  <nodeType>StartNode</nodeType>
+  <connection>_4030EF43-FBE5-42B1-8AD3-352779AF10B7</connection>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.706  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4718d79e }
+2020-04-08 13:41:43.707  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : data service value org.jbpm.kie.services.impl.RuntimeDataServiceImpl@2351255a
+2020-04-08 13:41:43.709  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@61bc7c55 }
+2020-04-08 13:41:43.710  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.712  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Process XML Event: 
+ <org.jbpm.process.audit.NodeInstanceLog>
+  <id>0</id>
+  <processInstanceId>2</processInstanceId>
+  <processId>TimerProject.SampleProcess</processId>
+  <date>2020-04-08 11:41:43.404 UTC</date>
+  <type>0</type>
+  <nodeInstanceId>0</nodeInstanceId>
+  <nodeId>_DF725249-E03F-4231-A574-CF95C7DCEC1C</nodeId>
+  <nodeType>StartNode</nodeType>
+  <externalId>business-application-kjar-1_0-SNAPSHOT</externalId>
+  <slaCompliance>0</slaCompliance>
+</org.jbpm.process.audit.NodeInstanceLog>
+2020-04-08 13:41:43.713  INFO 18835 --- [0.0-8090-exec-4] c.c.h.j.p.JMSProcessEventListener        : Sending JMS Message JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@22829946 }
+2020-04-08 13:41:43.720  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@521606bd }
+2020-04-08 13:41:43.729  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@434d734b }
+2020-04-08 13:41:43.730  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.739  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@2d81b227 }
+2020-04-08 13:41:43.747  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@4e8fcbcd }
+2020-04-08 13:41:43.748  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : persisting
+Hibernate: insert into NodeInstanceLog (id, connection, log_date, externalId, nodeContainerId, nodeId, nodeInstanceId, nodeName, nodeType, processId, processInstanceId, referenceId, slaCompliance, sla_due_date, type, workItemId) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-04-08 13:41:43.756  INFO 18835 --- [enerContainer-1] c.c.h.j.receivers.ProcessAuditReceiver   : [Process Audit Log] Message received : JmsTextMessage { org.apache.qpid.jms.provider.amqp.message.AmqpJmsTextMessageFacade@7b794719 }
+2020-04-08 13:59:22.064  INFO 18835 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 13:59:22.201  INFO 18835 --- [extShutdownHook] o.k.s.s.impl.policy.PolicyManager        : Policy manager stopped successfully
+2020-04-08 13:59:22.201  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : Server Default Extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.201  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : Drools KIE Server extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.204  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : jBPM KIE Server extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.204  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : Case-Mgmt KIE Server extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.204  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : jBPM-UI KIE Server extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.204  INFO 18835 --- [extShutdownHook] o.k.server.services.impl.KieServerImpl   : DMN KIE Server extension has been successfully unregistered as server extension
+2020-04-08 13:59:22.205  INFO 18835 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'org.jbpm.domain'
+2020-04-08 13:59:22.205  INFO 18835 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'org.jbpm.audit.persistence.jpa'
+2020-04-08 13:59:22.206  INFO 18835 --- [extShutdownHook] com.arjuna.ats.jbossatx                  : ARJUNA032014: Stopping transaction recovery manager
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18:57 min
+[INFO] Finished at: 2020-04-08T13:59:22+02:00
+[INFO] ------------------------------------------------------------------------

@@ -120,6 +120,28 @@ public class HistoryResource {
 
 		return createCorrectVariant(response, headers, Response.Status.OK, conversationIdHeader);
 	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/processes/instancesByDate")
+	public Response getProcessInstancesByStatusByDate(@Context HttpHeaders headers,
+			@ApiParam(value = "optional process instance status (active, completed, aborted) - defaults ot active (1) only", required = false, allowableValues = "1,2,3") @QueryParam("status") List<Integer> status,
+			@ApiParam(value = "optional process instance initiator - user who started process instance to filter process instances", required = false) @QueryParam("initiator") String initiator,
+			@ApiParam(value = "optional process name to filter process instances", required = false) @QueryParam("processName") String processName,
+			@ApiParam(value = "optional pagination - at which page to start, defaults to 0 (meaning first)", required = false) @QueryParam("page") @DefaultValue("0") Integer page,
+			@ApiParam(value = "optional pagination - size of the result, defaults to 10", required = false) @QueryParam("pageSize") @DefaultValue("10") Integer pageSize,
+			@ApiParam(value = "optional sort column, no default", required = false) @QueryParam("sort") String sort,
+			@ApiParam(value = "optional sort direction (asc, desc) - defaults to asc", required = false) @QueryParam("sortOrder") @DefaultValue("true") boolean sortOrder,
+			@QueryParam("startFrom") String startFrom, @QueryParam("startTo") String startTo) {
+		Header conversationIdHeader = buildConversationIdHeader("", context(), headers);
+		ProcessInstanceList response = historyRuntimeDataServiceBase.getProcessInstancesByDate(status, startFrom, startTo, initiator, processName,
+				page, pageSize, sort, sortOrder);
+		logger.debug("Returning result of process instance search: {}", response);
+
+		return createCorrectVariant(response, headers, Response.Status.OK, conversationIdHeader);
+	}
+	
+	
 
 	@GET
 	@Path("/tasks/instancesByUser")

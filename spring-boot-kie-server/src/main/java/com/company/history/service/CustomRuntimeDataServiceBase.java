@@ -1,13 +1,18 @@
 package com.company.history.service;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.jbpm.services.api.RuntimeDataService;
+import org.jbpm.services.api.model.ProcessInstanceDesc;
 import org.jbpm.shared.services.impl.commands.QueryNameCommand;
+import org.kie.api.runtime.process.ProcessInstance;
 import org.kie.internal.query.QueryFilter;
 import org.kie.internal.task.api.AuditTask;
+import org.kie.server.api.model.instance.ProcessInstanceList;
 import org.kie.server.api.model.instance.TaskSummaryList;
 import org.kie.server.services.api.KieServerRegistry;
 import org.kie.server.services.jbpm.RuntimeDataServiceBase;
@@ -20,6 +25,28 @@ public class CustomRuntimeDataServiceBase extends RuntimeDataServiceBase {
 	public CustomRuntimeDataServiceBase(CustomRuntimeDataServiceImpl delegate, KieServerRegistry context) {
 		super(delegate, context);
 		this.runtimeDataService = delegate;
+	}
+
+	public ProcessInstanceList getProcessInstancesByDate(List<Integer> status, String startFrom, String startTo,
+			String initiator, String processName, Integer page, Integer pageSize, String sort, boolean sortOrder) {
+
+		if (sort == null || sort.isEmpty()) {
+			sort = "ProcessInstanceId";
+		}
+		if (status == null || status.isEmpty()) {
+			status = new ArrayList<Integer>();
+			status.add(ProcessInstance.STATE_ACTIVE);
+		}
+		Collection<ProcessInstanceDesc> instances = null;
+
+		instances = runtimeDataService.getProcessInstancesByDate(status, startFrom, startTo, initiator,
+				buildQueryContext(page, pageSize, sort, sortOrder));
+
+		ProcessInstanceList processInstanceList = convertToProcessInstanceList(instances);
+		logger.debug("Returning result of process instance search: {}", processInstanceList);
+
+		return processInstanceList;
+
 	}
 
 	public TaskSummaryList getAllAuditTaskNoUser(Integer page, Integer pageSize, String sort, boolean sortOrder) {

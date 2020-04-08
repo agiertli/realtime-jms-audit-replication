@@ -34,7 +34,7 @@ import com.thoughtworks.xstream.XStream;
  * https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogProducer.java
  */
 @Component
-@Profile("!local-case")
+//@Profile("!local-case")
 public class JMSProcessEventListener implements ProcessEventListener {
 
 	Logger logger = LoggerFactory.getLogger(JMSProcessEventListener.class);
@@ -57,7 +57,7 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Autowired
 	private JmsTemplate jmsTemplate;
-	
+
 	@Value("${audit.queue}")
 	private String queue;
 
@@ -128,7 +128,8 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Override
 	public void beforeNodeTriggered(ProcessNodeTriggeredEvent event) {
-		NodeInstanceLog log = (NodeInstanceLog) builder.buildEvent(event, getProcessInstanceDeploymentId(event.getProcessInstance().getId()));
+		NodeInstanceLog log = (NodeInstanceLog) builder.buildEvent(event,
+				getProcessInstanceDeploymentId(event.getProcessInstance().getId()));
 		sendMessage(log, BEFORE_NODE_ENTER_EVENT_TYPE, 8);
 		((NodeInstanceImpl) event.getNodeInstance()).getMetaData().put("NodeInstanceLog", log);
 	}
