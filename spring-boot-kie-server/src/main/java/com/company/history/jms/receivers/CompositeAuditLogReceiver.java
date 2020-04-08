@@ -15,14 +15,17 @@ import org.springframework.transaction.annotation.Transactional;
 public class CompositeAuditLogReceiver {
 
 	private static final Logger logger = LoggerFactory.getLogger(CompositeAuditLogReceiver.class);
-	
+
 	@Autowired
 	private ProcessAuditReceiver processLogsReceiver;
-	
+
 	@Autowired
 	private TaskAuditReceiver taskLogReceiver;
 
-	@JmsListener(destination = "audit-queue")
+	@Autowired
+	private CaseAuditReceiver caseAuditReceiver;
+
+	@JmsListener(destination = "${audit.queue}")
 	public void receiveMessage(Message message) {
 
 		logger.debug("Audit log message received {}", message);
@@ -34,9 +37,11 @@ public class CompositeAuditLogReceiver {
 				processLogsReceiver.onMessage(message);
 			} else if ("Task".equals(logType)) {
 				taskLogReceiver.onMessage(message);
-			} /**else if ("Case".equals(logType) && caseInstanceLogReceiver != null) {
-				caseInstanceLogReceiver.onMessage(message);
-			} **/ else {
+			} else if ("Case".equals(logType) && caseAuditReceiver != null) {
+
+				logger.info("Case Audit received");
+				caseAuditReceiver.onMessage(message);
+			} else {
 				logger.warn("Unexpected message {} with log type {}, consuming and ignoring", message, logType);
 			}
 

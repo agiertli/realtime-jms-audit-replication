@@ -56,5 +56,41 @@
       <messages/>
       <containerAlias>business-application-kjar</containerAlias>
     </container>
+    <container>
+      <containerId>sample-case-1_0-SNAPSHOT</containerId>
+      <releaseId>
+        <groupId>com.myspace</groupId>
+        <artifactId>SampleCaseProject</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </releaseId>
+      <status>STARTED</status>
+      <scanner>
+        <status>STOPPED</status>
+      </scanner>
+      <configItems>
+        <config-item>
+          <name>KBase</name>
+          <value></value>
+          <type>BPM</type>
+        </config-item>
+        <config-item>
+          <name>KSession</name>
+          <value></value>
+          <type>BPM</type>
+        </config-item>
+        <config-item>
+          <name>MergeMode</name>
+          <value>MERGE_COLLECTIONS</value>
+          <type>BPM</type>
+        </config-item>
+        <config-item>
+          <name>RuntimeStrategy</name>
+          <value>PER_CASE</value>
+          <type>BPM</type>
+        </config-item>
+      </configItems>
+      <messages/>
+      <containerAlias>sample-case-application-kjar</containerAlias>
+    </container>
   </containers>
 </kie-server-state>

@@ -6,7 +6,7 @@
 		name="org.jbpm.audit.persistence.jpa" transaction-type="JTA">
 
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-
+		<class>org.jbpm.persistence.processinstance.ProcessInstanceInfo</class>
 		<class>org.jbpm.process.audit.ProcessInstanceLog</class>
 		<class>org.jbpm.process.audit.NodeInstanceLog</class>
 		<class>org.jbpm.process.audit.VariableInstanceLog</class>
@@ -28,6 +28,11 @@
 		<class>org.jbpm.kie.services.impl.store.DeploymentStoreEntry</class>
 		<class>org.jbpm.kie.services.impl.query.persistence.QueryDefinitionEntity</class>
 		<class>org.jbpm.runtime.manager.impl.jpa.ExecutionErrorInfo</class>
+		<class>org.jbpm.casemgmt.impl.audit.CaseRoleAssignmentLog</class>
+		<class>org.jbpm.runtime.manager.impl.jpa.ContextMappingInfo</class>
+		<class>org.jbpm.casemgmt.impl.audit.CaseFileDataLog</class>
+		<class>org.jbpm.casemgmt.impl.generator.CaseIdInfo</class>
+
 		<properties>
 			<property name="hibernate.connection.handling_mode"
 				value="DELAYED_ACQUISITION_AND_RELEASE_AFTER_TRANSACTION" />

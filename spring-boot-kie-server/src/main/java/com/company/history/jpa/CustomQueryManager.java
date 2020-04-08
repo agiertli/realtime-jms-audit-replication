@@ -101,6 +101,7 @@ public class CustomQueryManager {
 	public void init() {
 		addNamedQueries("META-INF/history-Servicesorm.xml");
 		addNamedQueries("META-INF/history-TaskAuditorm.xml");
+		addNamedQueries("META-INF/history-CaseMgmtorm.xml");
 		EntityManager tmpEM = emf.createEntityManager();
 		queries.forEach((k, v) -> {
 			logger.info("Registering {} query on history emf", k);

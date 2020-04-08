@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("local")
+@Profile({ "local", "local-case" })
 public class EmbeddedBrokerConfig {
-	
+
 	private Logger logger = LoggerFactory.getLogger(EmbeddedBrokerConfig.class);
 
 	@Bean
-	@Profile("local")
+	@Profile({ "local", "local-case" })
 	public ActiveMQJAASSecurityManager securityManager(@Value("${amq.broker.user}") String user,
 			@Value("${amq.broker.password}") String password, @Value("${amq.broker.role}") String role) {
 		final SecurityConfiguration configuration = new SecurityConfiguration();
@@ -32,7 +32,7 @@ public class EmbeddedBrokerConfig {
 	}
 
 	@Bean(initMethod = "start", destroyMethod = "stop")
-	@Profile("local")
+	@Profile({ "local", "local-case" })
 	public EmbeddedActiveMQ embeddedActiveMQ(ActiveMQJAASSecurityManager securityManager) {
 		logger.info("Initializaint Embedded AMQ broker");
 		final EmbeddedActiveMQ embeddedActiveMQ = new EmbeddedActiveMQ();

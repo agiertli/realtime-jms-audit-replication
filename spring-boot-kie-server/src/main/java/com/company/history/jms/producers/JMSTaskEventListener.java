@@ -31,6 +31,7 @@ import org.kie.internal.task.api.TaskVariable.VariableType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 
@@ -43,6 +44,9 @@ public class JMSTaskEventListener extends PersistableEventListener implements Ta
 	private XStream xstream;
 	@Autowired
 	private JmsTemplate jmsTemplate;
+
+	@Value("${audit.queue}")
+	private String queue;
 
 	public JMSTaskEventListener() {
 		super(null);
@@ -570,7 +574,7 @@ public class JMSTaskEventListener extends PersistableEventListener implements Ta
 
 		logger.info("Sending Task Audit message \n{}", eventXml);
 
-		jmsTemplate.send("audit-queue", messageCreator -> {
+		jmsTemplate.send(queue, messageCreator -> {
 			TextMessage message = messageCreator.createTextMessage(eventXml);
 			message.setStringProperty("LogType", "Task");
 			message.setJMSPriority(priority);

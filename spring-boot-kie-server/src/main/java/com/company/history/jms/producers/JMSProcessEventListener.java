@@ -21,6 +21,8 @@ import org.kie.api.event.process.ProcessVariableChangedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 
@@ -32,6 +34,7 @@ import com.thoughtworks.xstream.XStream;
  * https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogProducer.java
  */
 @Component
+@Profile("!local-case")
 public class JMSProcessEventListener implements ProcessEventListener {
 
 	Logger logger = LoggerFactory.getLogger(JMSProcessEventListener.class);
@@ -54,6 +57,9 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Autowired
 	private JmsTemplate jmsTemplate;
+	
+	@Value("${audit.queue}")
+	private String queue;
 
 	@Autowired
 	private RuntimeDataService runtimeDataService;
@@ -131,9 +137,9 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 		String eventXml = xstream.toXML(messageContent);
 
-		logger.info("XML Event: \n {}", eventXml);
+		logger.info("Process XML Event: \n {}", eventXml);
 
-		jmsTemplate.send("audit-queue", messageCreator -> {
+		jmsTemplate.send(queue, messageCreator -> {
 			TextMessage message = messageCreator.createTextMessage(eventXml);
 			message.setIntProperty("EventType", eventType);
 			message.setStringProperty("LogType", "Process");
