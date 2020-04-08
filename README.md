@@ -37,7 +37,7 @@ RuntimeDB                        +------------+             |                v
 
 Processes:
 ```
-GET rest/history/processes/instancesByDate?status=1&startFrom=2019-04-08&startTo=2020-04-9
+GET /rest/history/processes/instancesByDate?status=1&startFrom=2019-04-08&startTo=2020-04-9
 GET /rest/history/processes/instances?status=1
 GET /rest/history/processes/instances/1?withVars=true
 ```
