@@ -34,7 +34,7 @@ import com.thoughtworks.xstream.XStream;
  * https://github.com/kiegroup/jbpm/blob/master/jbpm-audit/src/main/java/org/jbpm/process/audit/jms/AsyncAuditLogProducer.java
  */
 @Component
-//@Profile("!local-case")
+@Profile("!local-case")
 public class JMSProcessEventListener implements ProcessEventListener {
 
 	Logger logger = LoggerFactory.getLogger(JMSProcessEventListener.class);
@@ -106,8 +106,6 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Override
 	public void afterProcessStarted(ProcessStartedEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -122,8 +120,6 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Override
 	public void beforeNodeLeft(ProcessNodeLeftEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -153,8 +149,6 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Override
 	public void beforeProcessCompleted(ProcessCompletedEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -166,8 +160,6 @@ public class JMSProcessEventListener implements ProcessEventListener {
 
 	@Override
 	public void beforeVariableChanged(ProcessVariableChangedEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public AuditEventBuilder getBuilder() {
