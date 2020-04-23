@@ -32,6 +32,29 @@
 			<artifactId>jackson-jaxrs-json-provider</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-rs-service-description-swagger</artifactId>
+			<version>3.2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jaxrs</artifactId>
+			<version>1.5.15</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.ws.rs</groupId>
+					<artifactId>jsr311-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
+<dependency>
+    <groupId>org.webjars</groupId>
+    <artifactId>swagger-ui</artifactId>
+    <version>3.25.0</version>
+</dependency>
 
 		<dependency>
 			<groupId>org.kie</groupId>
