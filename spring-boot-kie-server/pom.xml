@@ -49,12 +49,12 @@
 			</exclusions>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
-<dependency>
-    <groupId>org.webjars</groupId>
-    <artifactId>swagger-ui</artifactId>
-    <version>3.25.0</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>swagger-ui</artifactId>
+			<version>3.25.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.kie</groupId>

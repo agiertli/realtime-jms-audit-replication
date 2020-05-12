@@ -40,12 +40,14 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.company.history.service.CustomRuntimeDataServiceBase;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @Path("/history")
+@Api(value = "Custom History API", produces = MediaType.APPLICATION_JSON)
 public class HistoryResource {
 
 	Logger logger = LoggerFactory.getLogger(HistoryResource.class);
