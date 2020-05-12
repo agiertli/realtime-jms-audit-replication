@@ -100,8 +100,7 @@ public class HistoryResource {
 
 	@ApiOperation(value = "Returns all process instances filtered by optional parameters.", response = ProcessInstanceList.class, code = 200)
 	@ApiResponses(value = { @ApiResponse(code = 500, message = "Unexpected error"),
-			@ApiResponse(code = 200, message = "Successfull response", examples = @Example(value = {
-					@ExampleProperty(mediaType = JSON, value = GET_PROCESS_INSTANCES_RESPONSE_JSON) })) })
+			@ApiResponse(code = 200, message = "Successfull response") })
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/processes/instances")
@@ -120,7 +119,7 @@ public class HistoryResource {
 
 		return createCorrectVariant(response, headers, Response.Status.OK, conversationIdHeader);
 	}
-	
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/processes/instancesByDate")
@@ -134,14 +133,12 @@ public class HistoryResource {
 			@ApiParam(value = "optional sort direction (asc, desc) - defaults to asc", required = false) @QueryParam("sortOrder") @DefaultValue("true") boolean sortOrder,
 			@QueryParam("startFrom") String startFrom, @QueryParam("startTo") String startTo) {
 		Header conversationIdHeader = buildConversationIdHeader("", context(), headers);
-		ProcessInstanceList response = historyRuntimeDataServiceBase.getProcessInstancesByDate(status, startFrom, startTo, initiator, processName,
-				page, pageSize, sort, sortOrder);
+		ProcessInstanceList response = historyRuntimeDataServiceBase.getProcessInstancesByDate(status, startFrom,
+				startTo, initiator, processName, page, pageSize, sort, sortOrder);
 		logger.debug("Returning result of process instance search: {}", response);
 
 		return createCorrectVariant(response, headers, Response.Status.OK, conversationIdHeader);
 	}
-	
-	
 
 	@GET
 	@Path("/tasks/instancesByUser")
@@ -195,8 +192,7 @@ public class HistoryResource {
 	@ApiOperation(value = "Returns information about a specified task instance.", response = TaskInstance.class, code = 200)
 	@ApiResponses(value = { @ApiResponse(code = 500, message = "Unexpected error"),
 			@ApiResponse(code = 404, message = "Task not found for given id"),
-			@ApiResponse(code = 200, message = "Successfull response", examples = @Example(value = {
-					@ExampleProperty(mediaType = JSON, value = GET_TASK_RESPONSE_JSON) })) })
+			@ApiResponse(code = 200, message = "Successfull response") })
 	@GET
 	@Path("/tasks/instances/{tid}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -221,8 +217,7 @@ public class HistoryResource {
 
 	@ApiOperation(value = "Returns events for a specified task instance.", response = TaskEventInstanceList.class, code = 200)
 	@ApiResponses(value = { @ApiResponse(code = 500, message = "Unexpected error"),
-			@ApiResponse(code = 200, message = "Successfull response", examples = @Example(value = {
-					@ExampleProperty(mediaType = JSON, value = GET_TASK_EVENTS_RESPONSE_JSON) })) })
+			@ApiResponse(code = 200, message = "Successfull response") })
 	@GET
 	@Path("/tasks/instances/{tid}/events")
 	@Produces(MediaType.APPLICATION_JSON)
