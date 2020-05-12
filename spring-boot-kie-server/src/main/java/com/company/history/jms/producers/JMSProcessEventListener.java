@@ -167,7 +167,9 @@ public class JMSProcessEventListener implements ProcessEventListener {
 	}
 
 	private String getProcessInstanceDeploymentId(Long pid) {
-		return runtimeDataService.getProcessInstanceById(pid).getDeploymentId();
+
+		return runtimeDataService.getProcessInstanceById(pid) == null ? ""
+				: runtimeDataService.getProcessInstanceById(pid).getDeploymentId();
 	}
 
 }

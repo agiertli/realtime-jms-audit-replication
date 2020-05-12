@@ -5,12 +5,8 @@ import static org.kie.server.remote.rest.common.util.RestUtils.createCorrectVari
 import static org.kie.server.remote.rest.common.util.RestUtils.errorMessage;
 import static org.kie.server.remote.rest.common.util.RestUtils.getVariant;
 import static org.kie.server.remote.rest.common.util.RestUtils.internalServerError;
-import static org.kie.server.remote.rest.jbpm.docs.ParameterSamples.GET_PROCESS_INSTANCES_RESPONSE_JSON;
-import static org.kie.server.remote.rest.jbpm.docs.ParameterSamples.GET_TASK_RESPONSE_JSON;
-import static org.kie.server.remote.rest.jbpm.docs.ParameterSamples.JSON;
-import static org.kie.server.remote.rest.jbpm.docs.ParameterSamples.GET_TASK_EVENTS_RESPONSE_JSON;
-import static org.kie.server.remote.rest.jbpm.resources.Messages.TASK_INSTANCE_NOT_FOUND;
 import static org.kie.server.remote.rest.common.util.RestUtils.notFound;
+import static org.kie.server.remote.rest.jbpm.resources.Messages.TASK_INSTANCE_NOT_FOUND;
 
 import java.text.MessageFormat;
 import java.util.List;
@@ -48,8 +44,6 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import io.swagger.annotations.Example;
-import io.swagger.annotations.ExampleProperty;
 
 @Path("/history")
 public class HistoryResource {
